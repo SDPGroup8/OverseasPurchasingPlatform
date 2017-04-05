@@ -1,2 +1,2 @@
 # OverseasPurchasingPlatform
-For our Software Development Practice assignment
+For Group 8 Software Development Practice project
