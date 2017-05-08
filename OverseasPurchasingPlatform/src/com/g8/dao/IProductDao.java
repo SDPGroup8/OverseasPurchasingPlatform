@@ -56,7 +56,7 @@ public interface IProductDao {
 		 */
 		public BasePage<ProductBean> queryByPage(ProductBean product,BasePage page);
 		/**
-		 * Get the product object with typeid
+		 * Get the product type with typeid
 		 * @param typeid
 		 * @return
 		 */
