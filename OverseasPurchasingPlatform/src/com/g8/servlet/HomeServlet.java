@@ -36,10 +36,16 @@ public class HomeServlet extends HttpServlet {
 			//default page size
 			int pageSize = WebUtils.getPageSize(request, 6);
 			String comname = request.getParameter("comname");
+			String smalltypeid = request.getParameter("smalltypeid");
 			ProductBean product = new ProductBean();
 			//if the search text filed is not empty
 			if(!WebUtils.isEmpty(comname)){
 				product.setComname(comname);
+			}
+			//return the page according to the product's type
+			else if(!WebUtils.isEmpty(smalltypeid)){
+				product.setSmalltypeid(WebUtils.parseInt(smalltypeid));
+				product.setComname(null);
 			}
 			BasePage<ProductBean> page = new BasePage<>(currentPage, pageSize);
 			page = proservice.queryByPage(product, page);
@@ -47,7 +53,7 @@ public class HomeServlet extends HttpServlet {
 			request.setAttribute("totalPage", page.getTotalPage());
 			request.setAttribute("comname", comname);
 			request.getRequestDispatcher("shop-product-list.jsp").forward(request, response);
-		}
+		}   
 		//return to the home page of the website
 		else if("home".equals(task)){
 			request.getRequestDispatcher("index.jsp").forward(request, response);
