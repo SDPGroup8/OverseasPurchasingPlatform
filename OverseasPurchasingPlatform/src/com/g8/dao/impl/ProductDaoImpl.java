@@ -53,11 +53,11 @@ public class ProductDaoImpl extends BaseDao implements IProductDao {
 		
 		List<Object> list = new ArrayList<>();
 		if(product != null){
-			//针对对象中的属性一一判断
+			//The attributes in the object are judged one by one
 			if(!WebUtils.isEmpty(product.getComname())){
-				//说明需要根据商品名称进行查询
+				//Search by product name
 				whereSql.append(" and comname like ? ");
-				//需要对占位符中的数据进行赋值
+				//Assign values to the data in the placeholder
 				list.add("%"+product.getComname()+"%");
 			}else if(WebUtils.isEmpty(product.getComname())&& (product.getSmalltypeid()!=0)){
 				whereSql.append(" and smalltypeid = ? ");

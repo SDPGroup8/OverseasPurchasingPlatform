@@ -36,6 +36,7 @@ public class FrontLoginServlet extends HttpServlet {
 			// 2.Through the login method in the service to verify whether the
 			// successful login
 			UserBean user = service.login(userName, password);
+			System.out.println(user);
 			HttpSession session = request.getSession();
 			// 3. Make a different response based on the results of the
 			if (code.equals(rand)) {
@@ -43,17 +44,9 @@ public class FrontLoginServlet extends HttpServlet {
 				if (user != null) {
 					// Indicates successful login
 					// The current login user information stored in the session
-					// scope,
-					// easy to use the login user's information at any time
+					// scope, easy to use the login user's information at any time
 					session.setAttribute("user", user);
-					// String uri = (String)session.getAttribute("CURRENTURI");
-					/*
-					 * if(!uri.equals("../index.jsp")){
-					 * request.getRequestDispatcher(uri.substring(6)).forward(
-					 * request, response); }
-					 */
-					// else{
-					request.getRequestDispatcher("../index.jsp").forward(request, response);
+					request.getRequestDispatcher("index.jsp").forward(request, response);
 				}
 				// }
 				else {
@@ -63,6 +56,7 @@ public class FrontLoginServlet extends HttpServlet {
 							"<script  type='text/javascript'> alert('Login Failed!');window.location.href='shop-login.jsp'</script>");
 				}
 			} else {
+				//Wrong verified code
 				PrintWriter out = response.getWriter();
 				out.print(
 						"<script  type='text/javascript'> alert('Wrong verified code!');window.location.href='shop-login.jsp'</script>");

@@ -27,19 +27,19 @@ public class ShopCarServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String task = request.getParameter("task");
 		HttpSession session = request.getSession();
-		//获取购物车对象
+		//Get the shopping cart object
 		ShopCar car = ShopCar.getShopCar(session);
 		if("clear".equals(task)){
-			//表示清空购物车
+			//It means empty the shopping cart
 			car.clear();
 			response.sendRedirect("shop-shoppingcart.jsp");
 		}else if("delete".equals(task)){
-			//获取请求提交的商品编号
+			//Get the product id submitted by the request
 			String comid = request.getParameter("comid");
 			car.delete(WebUtils.parseInt(comid));
 			response.sendRedirect("shop-shoppingcart.jsp");
 		}else if("update".equals(task)){
-			//获取请求提交的商品编号
+			//Get the product id submitted by the request
 			String comid = request.getParameter("comid");
 			String num = request.getParameter("num");
 			
@@ -47,14 +47,14 @@ public class ShopCarServlet extends HttpServlet {
 			response.sendRedirect("shop-shoppingcart.jsp");
 		}
 		else{
-		//获取请求提交的商品编号
+		//Get the product id submitted by the request
 		String comid = request.getParameter("comid");
-		//往购物车中添加商品信息
+		//Add product information to shopping cart
 		ProductBean com = service.queryById(WebUtils.parseInt(comid));
 		car.add(com);
-		//服务器给出响应
+		//The server gives a response
 		PrintWriter out = response.getWriter();
-		//响应的信息不要是int类型
+		//The response information is not an int type
     	out.write(car.getCount()+"");
 		out.close();
 		}

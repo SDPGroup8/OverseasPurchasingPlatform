@@ -51,7 +51,6 @@ public class FrontPageFilter implements Filter {
 		} else {
 			// Not yet logged in
 			String currentURI = req.getRequestURI();
-			// System.out.println(currentURI);
 			session.setAttribute("CURRENTURI", currentURI);
 			session.setAttribute("LOGIN_ERROR", "Please login first.");
 			resp.sendRedirect("shop-login.jsp");

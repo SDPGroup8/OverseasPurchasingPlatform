@@ -83,6 +83,8 @@ public class ShopCar {
 	public void update(int comid,int num){
 		for (ProductBean productBean : list) {
 			if(productBean.getComid()==comid){
+				//Set the new purchase quantity for the product
+				System.out.println("product id: "+comid+",purchase quantity: "+num);
 				productBean.setShopNum(num);
 				break;
 			}

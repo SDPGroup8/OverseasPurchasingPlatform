@@ -30,12 +30,14 @@ public class HomeServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		String task = request.getParameter("task");
+		//show prodcut list
 		if ("productlist".equals(task)) {
 			int currentPage = WebUtils.getCurrentPage(request, 1);
 			//default page size
 			int pageSize = WebUtils.getPageSize(request, 6);
 			String comname = request.getParameter("comname");
 			ProductBean product = new ProductBean();
+			//if the search text filed is not empty
 			if(!WebUtils.isEmpty(comname)){
 				product.setComname(comname);
 			}
@@ -45,9 +47,13 @@ public class HomeServlet extends HttpServlet {
 			request.setAttribute("totalPage", page.getTotalPage());
 			request.setAttribute("comname", comname);
 			request.getRequestDispatcher("shop-product-list.jsp").forward(request, response);
-		}else if("home".equals(task)){
-			request.getRequestDispatcher("../index.jsp").forward(request, response);
-		}else if("userUpdate".equals(task)){
+		}
+		//return to the home page of the website
+		else if("home".equals(task)){
+			request.getRequestDispatcher("index.jsp").forward(request, response);
+		}
+		//update user's personal information
+		else if("userUpdate".equals(task)){
 			String userName = request.getParameter("username");
 			String firstName = request.getParameter("first_name");
 			String lastName = request.getParameter("last_name");
@@ -55,20 +61,9 @@ public class HomeServlet extends HttpServlet {
 			String phoneno = request.getParameter("phone");
 			String postalcode = request.getParameter("postalcode");
 			String address = request.getParameter("address");
-			userService.updateUserInfo(firstName, lastName, email, phoneno, address, postalcode, userName);
 			request.getRequestDispatcher("shop-account.jsp").forward(request, response);
 		}
-//		else if("productlist".equals(task)){
-//			int currentPage = WebUtils.getCurrentPage(request, 1);
-//			int pageSize = WebUtils.getPageSize(request, 3);
-//			BasePage<ProductBean> page = new BasePage<>(currentPage, pageSize);
-//			ProductBean product = new ProductBean();
-//			product.setSmalltypeid(1);;
-//			page = proservice.queryByPage(product, page);
-//			request.setAttribute("page", page);
-//			request.setAttribute("totalPage", page.getTotalPage());
-//			request.getRequestDispatcher("shop-product-list.jsp").forward(request, response);
-//		}
+		//jump to the shop-item page according to the id of the selected product
 		else{
 			String comid = request.getParameter("comid");
 			ProductBean product = new ProductBean();
