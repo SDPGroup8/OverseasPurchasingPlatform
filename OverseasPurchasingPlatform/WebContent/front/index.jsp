@@ -106,6 +106,8 @@ Home Page
       <div class="col-md-12 sale-product">
         <h2>Latest Products</h2>
         <div class="owl-carousel owl-carousel5">
+        
+        
           <div>
               <div class="product-item">
                 <div class="pi-img-wrapper">
@@ -115,9 +117,9 @@ Home Page
                     <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                   </div>
                 </div>
-                <h3><a href="javascript:;">Berry Lace Dress4</a></h3>
-                <div class="pi-price">$29.00</div>
-                <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                <h3><a href="javascript:;">Temp1</a></h3>
+                <div class="pi-price">$120.00</div>
+                <a href="javaScript:shopCar(1)" class="btn btn-default add2cart">Add to cart</a>
                 <div class="sticker sticker-new"></div>
               </div>
           </div>
@@ -130,9 +132,9 @@ Home Page
                     <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                   </div>
                 </div>
-                <h3><a href="javascript:;">Berry Lace Dress4</a></h3>
-                <div class="pi-price">$29.00</div>
-                <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                <h3><a href="javascript:;">Temp2</a></h3>
+                <div class="pi-price">$130.00</div>
+                <a href="javaScript:shopCar(2)" class="btn btn-default add2cart">Add to cart</a>
                 <div class="sticker sticker-new"></div>
               </div>
           </div>
@@ -145,9 +147,9 @@ Home Page
                     <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                   </div>
                 </div>
-                <h3><a href="javascript:;">Berry Lace Dress4</a></h3>
-                <div class="pi-price">$29.00</div>
-                <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                <h3><a href="javascript:;">Temp3</a></h3>
+                <div class="pi-price">$90.00</div>
+                <a href="javaScript:shopCar(3)" class="btn btn-default add2cart">Add to cart</a>
                 <div class="sticker sticker-new"></div>
               </div>
           </div>
@@ -160,9 +162,9 @@ Home Page
                     <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                   </div>
                 </div>
-                <h3><a href="javascript:;">Berry Lace Dress4</a></h3>
-                <div class="pi-price">$29.00</div>
-                <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                <h3><a href="javascript:;">Lux</a></h3>
+                <div class="pi-price">$50.00</div>
+                <a href="javaScript:shopCar(4)" class="btn btn-default add2cart">Add to cart</a>
                 <div class="sticker sticker-new"></div>
               </div>
           </div>
@@ -175,9 +177,9 @@ Home Page
                     <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                   </div>
                 </div>
-                <h3><a href="javascript:;">Berry Lace Dress4</a></h3>
-                <div class="pi-price">$29.00</div>
-                <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                <h3><a href="javascript:;">Temp4</a></h3>
+                <div class="pi-price">$30.00</div>
+                <a href="javaScript:shopCar(5)" class="btn btn-default add2cart">Add to cart</a>
                 <div class="sticker sticker-new"></div>
               </div>
           </div>                                          
@@ -193,6 +195,8 @@ Home Page
       <div class="col-md-12 sale-product">
         <h2>Special Offers</h2>
         <div class="owl-carousel owl-carousel5">
+        
+        
           <div>
             <div class="product-item">
               <div class="pi-img-wrapper">
@@ -202,9 +206,9 @@ Home Page
                   <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                 </div>
               </div>
-              <h3><a href="shop-item.html">Berry Lace Dress</a></h3>
-              <div class="pi-price">$29.00</div>
-              <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+              <h3><a href="shop-item.html">Temp5</a></h3>
+              <div class="pi-price">$20.00</div>
+              <a href="javaScript:shopCar(6)" class="btn btn-default add2cart">Add to cart</a>
               <div class="sticker sticker-sale"></div>
             </div>
           </div>
@@ -217,9 +221,9 @@ Home Page
                   <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                 </div>
               </div>
-              <h3><a href="shop-item.html">Berry Lace Dress</a></h3>
-              <div class="pi-price">$29.00</div>
-              <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+              <h3><a href="shop-item.html">Lux1</a></h3>
+              <div class="pi-price">$50.00</div>
+              <a href="javaScript:shopCar(7)" class="btn btn-default add2cart">Add to cart</a>
               <div class="sticker sticker-sale"></div>
             </div>
           </div>
@@ -232,9 +236,9 @@ Home Page
                   <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                 </div>
               </div>
-              <h3><a href="shop-item.html">Berry Lace Dress</a></h3>
-              <div class="pi-price">$29.00</div>
-              <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+              <h3><a href="shop-item.html">Lux2</a></h3>
+              <div class="pi-price">$100.00</div>
+              <a href="javaScript:shopCar(8)" class="btn btn-default add2cart">Add to cart</a>
               <div class="sticker sticker-sale"></div>
             </div>
           </div>
@@ -247,9 +251,9 @@ Home Page
                   <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                 </div>
               </div>
-              <h3><a href="shop-item.html">Berry Lace Dress</a></h3>
-              <div class="pi-price">$29.00</div>
-              <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+              <h3><a href="shop-item.html">Temp 6</a></h3>
+              <div class="pi-price">$80.00</div>
+              <a href="javaScript:shopCar(9)" class="btn btn-default add2cart">Add to cart</a>
               <div class="sticker sticker-sale"></div>
             </div>
           </div>
@@ -262,12 +266,14 @@ Home Page
                   <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                 </div>
               </div>
-              <h3><a href="shop-item.html">Berry Lace Dress</a></h3>
-              <div class="pi-price">$29.00</div>
-              <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+              <h3><a href="shop-item.html">Temp 7</a></h3>
+              <div class="pi-price">$75.00</div>
+              <a href="javaScript:shopCar(10)" class="btn btn-default add2cart">Add to cart</a>
               <div class="sticker sticker-sale"></div>
             </div>
           </div>
+          
+          
         </div>
       </div>
       <!-- END Special Offers -->
@@ -276,19 +282,18 @@ Home Page
 
   </div>
 </div>
- <script type="text/javascript">
-     	function shopCar(mcid){
+<script type="text/javascript">
+     	function shopCar(comid){
      		//1.Gets the XMLHttpRequest object
      		var http = new XMLHttpRequest();
-     		//2.Send request
-     		http.open("GET","front/ShopCarServlet?mcid="+mcid ,true);
+     		//2.send request
+     		http.open("GET","ShopCarServlet?comid="+comid,true);
      		http.send();
-     		//3.
      		http.onreadystatechange = function(){
      			if(http.readyState=='4' && http.status=='200'){
-     				document.getElementById("shopCount").innerHTML =http.responseText;
+     				document.getElementById("shopCount").innerHTML = http.responseText;
+     				document.getElementById("shopTotalPrice").innerHTML = http.responseText;
      			}
-     			
      		}
      	}
      </script>
