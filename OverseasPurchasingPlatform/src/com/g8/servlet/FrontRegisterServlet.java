@@ -26,13 +26,14 @@ public class FrontRegisterServlet extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		session = request.getSession();
+		//Get the value of parameters from the form
 		String firstName = request.getParameter("first_name");
 		String lastName = request.getParameter("last_name");
 		String email = request.getParameter("mail");
 		String phoneno = request.getParameter("phoneno");
 		String password = request.getParameter("password_login");
 		String passwordConf = request.getParameter("password_comfirm");
-				
+		//Set these parameters into the user oboject		
 		UserBean user = new UserBean();
 		user.setFirstname(firstName);
 		user.setLastname(lastName);
@@ -41,6 +42,7 @@ public class FrontRegisterServlet extends HttpServlet {
 		user.setUsername(email);
 		user.setPhoneno(phoneno);
 		user.setPassword(passwordConf);
+		//Check whether the email address has been registered
 		if(service.userNameCheck(email)!=null){
 			//request.getRequestDispatcher("FrontRegister.jsp").forward(request, response);
 			PrintWriter out = response.getWriter();
