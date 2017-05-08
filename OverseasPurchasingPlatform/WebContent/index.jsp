@@ -10,7 +10,7 @@
 <body>
 		<%
 		 response.sendRedirect("front/HomeServlet?task=home");
-		 return;      
+    
 		%>
 </body>
 </html>
