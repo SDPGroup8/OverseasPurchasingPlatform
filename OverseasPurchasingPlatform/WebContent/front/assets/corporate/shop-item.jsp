@@ -96,18 +96,18 @@
 										data-BigImgsrc="assets/pages/img/products/model7.jpg">
 								</div>
 								<div class="product-other-images">
-									<a href="assets/pages/img/products/model3.jpg"
+									<a href="assets/pages/img/products/model1.jpg"
 										class="fancybox-button" rel="photos-lib"><img
 										alt="Berry Lace Dress"
-										src="assets/pages/img/products/model3.jpg"></a> <a
-										href="assets/pages/img/products/model4.jpg"
+										src="assets/pages/img/products/model1.jpg"></a> <a
+										href="assets/pages/img/products/model1.jpg"
 										class="fancybox-button" rel="photos-lib"><img
 										alt="Berry Lace Dress"
-										src="assets/pages/img/products/model4.jpg"></a> <a
-										href="assets/pages/img/products/model5.jpg"
+										src="assets/pages/img/products/model1.jpg"></a> <a
+										href="assets/pages/img/products/model1.jpg"
 										class="fancybox-button" rel="photos-lib"><img
 										alt="Berry Lace Dress"
-										src="assets/pages/img/products/model5.jpg"></a>
+										src="assets/pages/img/products/model1.jpg"></a>
 								</div>
 							</div>
 							<div class="col-md-6 col-sm-6">

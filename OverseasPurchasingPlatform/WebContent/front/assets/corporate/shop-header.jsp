@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
 <!--[if !IE]><!-->
@@ -101,8 +102,8 @@
 
         <!-- BEGIN CART -->
         <div class="top-cart-block">
-          <div class="top-cart-info">
-            <a href="shop-shoppingcart.jsp" class="top-cart-info-count"><span id="shopCount">${SESSION_SHOPCAR.count}</span>  items</a>
+          <div class="top-cart-info">            
+            <a href="shop-shoppingcart.jsp" class="top-cart-info-count"><span id="shopCount" >${SESSION_SHOPCAR.count}</span>  items</a>
         
           </div>
           <i class="fa fa-shopping-cart"></i>
@@ -110,17 +111,19 @@
           <div class="top-cart-content-wrapper">
             <div class="top-cart-content">
               <ul class="scroller" style="height: 250px;">
+              <c:forEach var="com" items="${SESSION_SHOPCAR.list }">  
                 <li>
-                  <a href="shop-item.html"><img src="assets/pages/img/cart-img.jpg" alt="Rolex Classic Watch" width="37" height="34"></a>
-                  <span class="cart-content-count">x 1</span>
-                  <strong><a href="shop-item.jsp">Rolex Classic Watch</a></strong>
-                  <em>$1230</em>
-                  <a href="javascript:void(0);" class="del-goods">&nbsp;</a>
+                  <a href="shop-item.jsp"><img src="assets/pages/img/products/model1.jpg" alt="Rolex Classic Watch" width="37" height="34"></a>
+                  <span class="cart-content-count">x ${com.shopNum }</span>
+                  <strong><a href="shop-item.jsp">${com.comname }</a></strong>
+                  <em>$${ com.shopNum*com.price}</em>
+                  <a href="javascript:delGoods(${ com.comid});" class="del-goods">&nbsp;</a>
                 </li>
+              </c:forEach>
               </ul>
               <div class="text-right">
-                <a href="shop-shopping-cart.html" class="btn btn-default">View Cart</a>
-                <a href="shop-checkout.html" class="btn btn-primary">Checkout</a>
+                <a href="shop-shoppingcart.jsp" class="btn btn-default">View Cart</a>
+                <a href="shop-checkout.jsp" class="btn btn-primary">Checkout</a>
               </div>
             </div>
           </div>            
@@ -192,3 +195,9 @@
       </div>
     </div>
     <!-- Header END -->
+    <script type="text/javascript">
+			function delGoods(comid){
+				// Remove items in the shopping cart
+				location.href="ShopCarServlet?task=delete&comid="+comid;
+			}
+		</script>

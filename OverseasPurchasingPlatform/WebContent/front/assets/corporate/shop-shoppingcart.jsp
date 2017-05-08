@@ -33,7 +33,7 @@
               <c:forEach var="com" items="${SESSION_SHOPCAR.list }">
               <tr>
                 <td class="goods-page-image">
-                  <a href="javascript:;"><img src="assets/pages/img/products/model3.jpg" alt="Berry Lace Dress"></a>
+                  <a href="javascript:;"><img src="assets/pages/img/products/model1.jpg" alt="Berry Lace Dress"></a>
                 </td>
                 <td class="goods-page-description">
                   <h3><a href="javascript:;">${com.comname }</a></h3>

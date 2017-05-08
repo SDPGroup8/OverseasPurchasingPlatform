@@ -96,7 +96,7 @@
           <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="product-item">
               <div class="pi-img-wrapper">
-                <img src="assets/pages/img/products/model1.jpg" class="img-responsive" alt="Berry Lace Dress">
+                <img src="assets/pages/img/products/model1.jpg" class="img-responsive" >
                 <div>
                   <a href="assets/pages/img/products/model1.jpg" class="btn btn-default fancybox-button">Zoom</a>
                   <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
@@ -136,8 +136,8 @@
      		http.send();
      		http.onreadystatechange = function(){
      			if(http.readyState=='4' && http.status=='200'){
-     				document.getElementById("shopCount").innerHTML =http.responseText;
-     				document.getElementById("shopTotalPrice").innerHTML =http.responseText;
+     				document.getElementById("shopCount").innerHTML = http.responseText;
+     				document.getElementById("shopTotalPrice").innerHTML = http.responseText;
      			}
      			
      		}

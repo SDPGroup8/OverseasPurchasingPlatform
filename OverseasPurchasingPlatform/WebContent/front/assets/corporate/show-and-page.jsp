@@ -41,7 +41,6 @@
         <script type="text/javascript">
         function changePageSize(size){
 			document.getElementById("currentPage").value = 1;
-			alert("sss");
 			document.getElementById("pageSize").value = size;
 			document.getElementById("myForm").submit();
 		}

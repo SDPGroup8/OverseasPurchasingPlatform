@@ -18,7 +18,7 @@
               String temp = request.getAttribute("totalPage").toString();
               int totalPage = Integer.parseInt(temp);
               for(int i=1;i<=totalPage;i++){
-            	  out.println("<li><a href=wel.jsp?pageNow="+i+">"+i+"</a><li>");
+            	  out.println("<li><a href=javascript:changeCurrentPage("+i+");>"+i+"</a><li>");
             	  }
               %>
               
@@ -52,14 +52,7 @@
 			// 提交表单
 			document.getElementById("myForm").submit();
 		}
-		// 改变每页显示的条数
-		function changePageSize(size){
-			// 设置currentPage的值
-			document.getElementById("currentPage").value = 1;
-			document.getElementById("pageSize").value = size;
-			// 提交表单
-			document.getElementById("myForm").submit();
-		}
+		
 	</script>
 </body>
 </html>
