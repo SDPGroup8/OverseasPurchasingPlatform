@@ -136,40 +136,40 @@
             <li class="dropdown active">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">Baby &amp; Child Care</a>               
               <ul class="dropdown-menu">
-                <li><a href="HomeServlet?task=productlist">For Baby &amp; Child</a></li>
-                <li class="active"><a href="shop-for-mum.html">For Mum</a></li>
-                <li><a href="shop-accessories.html">Accessories</a></li>
+                <li><a href="HomeServlet?task=productlist&smalltypeid=1">For Baby &amp; Child</a></li>
+                <li><a href="HomeServlet?task=productlist&smalltypeid=2">For Mum</a></li>
+                <li><a href="HomeServlet?task=productlist&smalltypeid=3">Accessories</a></li>
               </ul>
             </li>
             
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">Natural Health</a>               
               <ul class="dropdown-menu">
-                <li><a href="shop-bone-joint-health.html">Bone &amp; Joint Support</a></li>
-                <li><a href="shop-brain-health.html">Brain Health</a></li>
-                <li><a href="shop-eye-health.html">Eye Health</a></li>
-                <li><a href="shop-heart-health.html">Heart Health</a></li>
-                <li><a href="shop-diet-weight-loss.html">Diet &amp; Weight Loss</a></li>
-                <li><a href="shop-multivitamin-minerals.html">MultiVitamin &amp; Minerals</a></li>
+                <li><a href="HomeServlet?task=productlist&smalltypeid=1">Bone &amp; Joint Support</a></li>
+                <li><a href="HomeServlet?task=productlist&smalltypeid=2">Brain Health</a></li>
+                <li><a href="HomeServlet?task=productlist&smalltypeid=3">Eye Health</a></li>
+                <li><a href="HomeServlet?task=productlist&smalltypeid=1">Heart Health</a></li>
+                <li><a href="HomeServlet?task=productlist&smalltypeid=2">Diet &amp; Weight Loss</a></li>
+                <li><a href="HomeServlet?task=productlist&smalltypeid=3">MultiVitamin &amp; Minerals</a></li>
               </ul>
             </li>
 
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">Beauty</a>             
               <ul class="dropdown-menu">
-                <li><a href="shop-skin-care.html">Skin Care</a></li>
-                <li><a href="shop-boby-care.html">Body Care</a></li>
-                <li><a href="shop-hair-care.html">Hair Care</a></li>               
+                <li><a href="HomeServlet?task=productlist&smalltypeid=2">Skin Care</a></li>
+                <li><a href="HomeServlet?task=productlist&smalltypeid=1">Body Care</a></li>
+                <li><a href="HomeServlet?task=productlist&smalltypeid=3">Hair Care</a></li>               
               </ul>
             </li>          
 
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">Food</a>               
               <ul class="dropdown-menu">              
-                <li><a href="shop-beverage.html">Beverage</a></li>                
-                <li><a href="shop-fruit.html">Fruit</a></li>
-                <li><a href="shop-snack.html">Snack</a></li>
-                <li><a href="shop-wine.html">Wine</a></li>
+                <li><a href="HomeServlet?task=productlist&smalltypeid=2">Beverage</a></li>                
+                <li><a href="HomeServlet?task=productlist&smalltypeid=2">Fruit</a></li>
+                <li><a href="HomeServlet?task=productlist&smalltypeid=1">Snack</a></li>
+                <li><a href="HomeServlet?task=productlist&smalltypeid=3">Wine</a></li>
               </ul>
             </li>
 
