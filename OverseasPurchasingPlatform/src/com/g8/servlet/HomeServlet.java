@@ -41,6 +41,7 @@ public class HomeServlet extends HttpServlet {
 			ProductBean product = new ProductBean();
 			//if the search text filed is not empty
 			if(!WebUtils.isEmpty(comname)){
+				comname = comname.toLowerCase();
 				product.setComname(comname);
 			}
 			//return the page according to the product's type
