@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.g8.model.ProductBean;
+import com.g8.model.UserBean;
 import com.g8.service.IProductService;
 import com.g8.service.IUserService;
 import com.g8.service.impl.ProductService;
@@ -60,6 +61,7 @@ public class HomeServlet extends HttpServlet {
 		}
 		//update user's personal information
 		else if("userUpdate".equals(task)){
+			HttpSession session = request.getSession();
 			String userName = request.getParameter("username");
 			String firstName = request.getParameter("first_name");
 			String lastName = request.getParameter("last_name");
@@ -67,6 +69,16 @@ public class HomeServlet extends HttpServlet {
 			String phoneno = request.getParameter("phone");
 			String postalcode = request.getParameter("postalcode");
 			String address = request.getParameter("address");
+			UserBean user = new UserBean();
+			user.setUsername(userName);
+			user.setFirstname(firstName);
+			user.setLastname(lastName);
+			user.setEmail(email);
+			user.setPhoneno(phoneno);
+			user.setPostalcode(postalcode);
+			user.setAddress(address);
+			session.setAttribute("user", user);
+			userService.updateUserInfo(firstName, lastName, email, phoneno, address, postalcode, userName);
 			request.getRequestDispatcher("shop-account.jsp").forward(request, response);
 		}
 		//jump to the shop-item page according to the id of the selected product
