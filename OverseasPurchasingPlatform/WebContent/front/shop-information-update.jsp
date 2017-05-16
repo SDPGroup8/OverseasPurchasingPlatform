@@ -235,6 +235,7 @@
 								</label>
 								<div class="col-lg-8">
 									<input type="text" id="phone" name="phone" onFocus="inPhone()"
+										value="${ sessionScope.user.phoneno }"
 										onBlur="outPhone()" class="form-control">
 									<div id="phone_mess" class="clr"></div>
 								</div>
@@ -243,6 +244,7 @@
 								<label class="col-lg-2 control-label" for="address">Address</label>
 								<div class="col-lg-8">
 									<input type="text" id="address" name="address"
+										value="${ sessionScope.user.address }"
 										onFocus="inAddress()" class="form-control">
 									<div id="address_mess" class="clr"></div>
 								</div>
@@ -253,6 +255,7 @@
 								<div class="col-lg-8">
 									<input type="text" id="post-code" maxlength="4"
 										name="postalcode" onFocus="inPostCode()"
+										value="${ sessionScope.user.postalcode }"
 										onBlur="outPostCode()" class="form-control">
 									<div id="postalcode_mess" class="clr"></div>
 								</div>
