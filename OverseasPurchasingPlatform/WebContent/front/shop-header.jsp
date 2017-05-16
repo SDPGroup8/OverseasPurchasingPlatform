@@ -178,9 +178,11 @@
               <span class="sep"></span>
               <i class="fa fa-search search-btn"></i>
               <div class="search-box">
-                <form action="HomeServlet?task=productlist" method="post">
+                <form action="HomeServlet?task=productlist" method="post" id="myForm">
                   <div class="input-group">
-                    <input type="text" placeholder="Search" name="comname" class="form-control">
+                   <input type="hidden" name="currentPage" id="currentPage" value="${page.currentPage }">
+			       <input type="hidden" name="pageSize" id="pageSize" value="${page.pageSize }">
+                    <input type="text" placeholder="Search" value="${comname }" name="comname" class="form-control">
                     <span class="input-group-btn">
                       <button class="btn btn-primary" type="submit">Search</button>
                     </span>
