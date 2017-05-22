@@ -26,7 +26,7 @@ public class ProductService implements IProductService {
 	@Override
 	public int delete(int id) {
 		// TODO Auto-generated method stub
-		return 0;
+		return dao.delete(id);
 	}
 
 	@Override
