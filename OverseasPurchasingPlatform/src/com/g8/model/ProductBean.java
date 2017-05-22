@@ -19,7 +19,7 @@ public class ProductBean {
 	//Picture address of the commodity
 	private String pic;
 	//Whether it is out of stock
-	private char flag;
+	private String flag;
 	//Type ID of the commodity
 	private int smalltypeid;
 	//Create date
@@ -28,7 +28,7 @@ public class ProductBean {
 	private int quantity;
 	//The number of goods purchased by the user
 	private int shopNum;
-	public ProductBean(int comid, String comname, String comdesc, double price, String pic, char flag, int smalltypeid,
+	public ProductBean(int comid, String comname, String comdesc, double price, String pic, String flag, int smalltypeid,
 			Date createdate, int quantity) {
 		super();
 		this.comid = comid;
@@ -74,10 +74,10 @@ public class ProductBean {
 	public void setPic(String pic) {
 		this.pic = pic;
 	}
-	public char getFlag() {
+	public String getFlag() {
 		return flag;
 	}
-	public void setFlag(char flag) {
+	public void setFlag(String flag) {
 		this.flag = flag;
 	}
 	public int getSmalltypeid() {

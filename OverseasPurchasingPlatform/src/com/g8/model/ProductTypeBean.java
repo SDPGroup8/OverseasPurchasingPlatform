@@ -31,6 +31,11 @@ public class ProductTypeBean {
 		this.typename = typename;
 		this.bigtypeid = bigtypeid;
 	}
+	public ProductTypeBean(String typename, int bigtypeid) {
+		super();
+		this.typename = typename;
+		this.bigtypeid = bigtypeid;
+	}
 	public ProductTypeBean() {
 		super();
 	}
