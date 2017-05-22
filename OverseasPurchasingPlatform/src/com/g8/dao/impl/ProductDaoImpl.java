@@ -16,20 +16,20 @@ public class ProductDaoImpl extends BaseDao implements IProductDao {
 
 	@Override
 	public int add(ProductBean product) {
-		sql = "insert into t_commodity(comid,comname,comdesc,price,pic,flag,smalltypeid,quantity,createdate) values (seq_t_mc.nextval,?,?,?,?,?,?,?,sysdate)";
-		return super.baseQueryForCount(sql, product);
+		sql = "insert into t_commodity(comid,comname,comdesc,price,pic,flag,smalltypeid,quantity,createdate) values (seq_t_commodity.nextval,?,?,?,?,?,?,?,sysdate)";
+		return super.baseUpdate(sql, product.getComname(),product.getComdesc(),product.getPrice(),product.getPic(),product.getFlag(),product.getSmalltypeid(),product.getQuantity());
 	}
 
 	@Override
 	public int update(ProductBean product) {
 		sql = "update t_commodity set comname = ?, comdesc = ?, price = ?, pic = ?, flag = ?, smalltypeid = ?, quantity = ? where comid = ?";
-		return super.baseQueryForCount(sql, product);
+		return super.baseUpdate(sql, product.getComname(),product.getComdesc(),product.getPrice(),product.getPic(),product.getFlag(),product.getSmalltypeid(),product.getQuantity());
 	}
 
 	@Override
 	public int delete(int id) {
-		// TODO Auto-generated method stub
-		return 0;
+		sql = "delete from t_commodity where comid = ?";
+		return super.baseUpdate(sql, id);
 	}
 	
 	@Override
