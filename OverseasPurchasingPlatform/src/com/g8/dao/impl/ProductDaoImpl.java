@@ -23,7 +23,7 @@ public class ProductDaoImpl extends BaseDao implements IProductDao {
 	@Override
 	public int update(ProductBean product) {
 		sql = "update t_commodity set comname = ?, comdesc = ?, price = ?, pic = ?, flag = ?, smalltypeid = ?, quantity = ? where comid = ?";
-		return super.baseUpdate(sql, product.getComname(),product.getComdesc(),product.getPrice(),product.getPic(),product.getFlag(),product.getSmalltypeid(),product.getQuantity());
+		return super.baseUpdate(sql, product.getComname(),product.getComdesc(),product.getPrice(),product.getPic(),product.getFlag(),product.getSmalltypeid(),product.getQuantity(),product.getComid());
 	}
 
 	@Override
