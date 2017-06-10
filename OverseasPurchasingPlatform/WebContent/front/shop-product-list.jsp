@@ -11,14 +11,6 @@
 		<jsp:param value="1" name="flag" />
 	</jsp:include>
 <body>
-<div class="title-wrapper">
-  <div class="container">
-    <div class="container-inner">
-      <h1><span>MEN</span> CATEGORY</h1>
-      <em>Over 4000 Items are available here</em>
-    </div>
-  </div>
-</div>
 
 <div class="main">
   <div class="container">
@@ -35,9 +27,9 @@
             <a href="HomeServlet?task=productlist&smalltypeid=1" class="collapsed">
               <i class="fa fa-angle-right"></i>Baby &amp; Child Care</a>
             <ul class="dropdown-menu" style="display:block;">
-              <li class="list-group-item dropdown clearfix active"><a href="HomeServlet?task=productlist&smalltypeid=1" class="collapsed"><i class="fa fa-angle-right"></i> For Baby &amp; Child </a></li>
-              <li><a href="HomeServlet?task=productlist&smalltypeid=2"><i class="fa fa-angle-right"></i> For Mum</a></li>
-              <li><a href="HomeServlet?task=productlist&smalltypeid=3"><i class="fa fa-angle-right"></i> Accessories</a></li>
+              <li class="list-group-item dropdown clearfix active"><a href="HomeServlet?task=productlist&smalltypeid=5" class="collapsed"><i class="fa fa-angle-right"></i> For Baby &amp; Child </a></li>
+              <li><a href="HomeServlet?task=productlist&smalltypeid=6"><i class="fa fa-angle-right"></i> For Mum</a></li>
+              <li><a href="HomeServlet?task=productlist&smalltypeid=7"><i class="fa fa-angle-right"></i> Accessories</a></li>
             </ul>
           </li>
           <li class="list-group-item clearfix dropdown active">
@@ -96,9 +88,9 @@
           <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="product-item">
               <div class="pi-img-wrapper">
-                <img src="assets/pages/img/products/model1.jpg" class="img-responsive" >
+                <img src="${com.pic }" class="img-responsive" >
                 <div>
-                  <a href="assets/pages/img/products/model1.jpg" class="btn btn-default fancybox-button">Zoom</a>
+                  <a href="${com.pic }" class="btn btn-default fancybox-button">Zoom</a>
                   <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                 </div>
               </div>
@@ -137,11 +129,9 @@
      		http.onreadystatechange = function(){
      			if(http.readyState=='4' && http.status=='200'){
      				document.getElementById("shopCount").innerHTML = http.responseText;
-     				document.getElementById("shopTotalPrice").innerHTML = http.responseText;
      			}
      			
      		}
-     		location.reload(true);
      	}
      </script>
 <jsp:include page="shop-footer.jsp">

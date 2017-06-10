@@ -44,7 +44,7 @@
 
           <h3>My Orders</h3>
           <ul>
-            <li><a href="javascript:;">Order History</a></li>
+            <li><a href="OrderServlet?task=history">Order History</a></li>
             <li><a href="javascript:;">Transactions</a></li>
           </ul>
         </div>

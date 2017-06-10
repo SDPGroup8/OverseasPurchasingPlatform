@@ -66,21 +66,21 @@
               <ul>
                 <li>
                   <em>Sub total</em>
-                  <strong class="price"><span>$</span>${ SESSION_SHOPCAR.totalPrice}</strong>
+                  <strong class="price"><span>$</span>${ (SESSION_SHOPCAR.count == null || SESSION_SHOPCAR.count ==0) ? 0.00 : SESSION_SHOPCAR.totalPrice}</strong>
                 </li>
                 <li>
                   <em>Shipping cost</em>
-                  <strong class="price"><span>$</span>${SESSION_SHOPCAR.count == 0 ? 0.00 : 3.00 }</strong>
+                  <strong class="price"><span>$</span>${ (SESSION_SHOPCAR.count == null || SESSION_SHOPCAR.count ==0) ? 0.00 : 3.00 }</strong>
                 </li>
                 <li class="shopping-total-price">
                   <em>Total</em>
-                  <strong class="price"><span>$</span>${ SESSION_SHOPCAR.count == 0 ? 0.00 : SESSION_SHOPCAR.totalPrice+3.0}</strong>
+                  <strong class="price"><span>$</span>${ (SESSION_SHOPCAR.count == null || SESSION_SHOPCAR.count ==0) ? 0.00 : SESSION_SHOPCAR.totalPrice+3.0}</strong>
                 </li>
               </ul>
             </div>
           </div>
-          <button class="btn btn-default" type="submit">Continue shopping <i class="fa fa-shopping-cart"></i></button>
-          <button class="btn btn-primary" type="submit">Checkout <i class="fa fa-check"></i></button>
+          <a href="HomeServlet?task=home"><button class="btn btn-default" type="button">Continue shopping <i class="fa fa-shopping-cart"></i></button></a>
+          <a href="filterpage/shop-checkout.jsp" class="btn btn-primary">Checkout</a> <i class="fa fa-check"></i>
         </div>
       </div>
       <!-- END CONTENT -->

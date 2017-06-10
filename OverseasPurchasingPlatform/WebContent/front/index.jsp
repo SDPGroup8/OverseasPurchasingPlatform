@@ -111,13 +111,13 @@ Home Page
           <div>
               <div class="product-item">
                 <div class="pi-img-wrapper">
-                  <img src="assets/pages/img/products/model4.jpg" class="img-responsive" alt="Berry Lace Dress">
+                  <img src="../pic/baby & mum/baby/1.jpg" class="img-responsive" alt="Berry Lace Dress">
                   <div>
-                    <a href="assets/pages/img/products/model4.jpg" class="btn btn-default fancybox-button">Zoom</a>
+                    <a href="../pic/baby & mum/baby/1.jpg" class="btn btn-default fancybox-button">Zoom</a>
                     <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                   </div>
                 </div>
-                <h3><a href="javascript:;">Temp1</a></h3>
+                <h3><a href="HomeServlet?comid=1">BABY PRODUCT 1</a></h3>
                 <div class="pi-price">$120.00</div>
                 <a href="javaScript:shopCar(1)" class="btn btn-default add2cart">Add to cart</a>
                 <div class="sticker sticker-new"></div>
@@ -126,13 +126,13 @@ Home Page
           <div>
               <div class="product-item">
                 <div class="pi-img-wrapper">
-                  <img src="assets/pages/img/products/model4.jpg" class="img-responsive" alt="Berry Lace Dress">
+                  <img src="../pic/baby & mum/baby/2.jpg" class="img-responsive" alt="Berry Lace Dress">
                   <div>
-                    <a href="assets/pages/img/products/model4.jpg" class="btn btn-default fancybox-button">Zoom</a>
+                    <a href="../pic/baby & mum/baby/2.jpg" class="btn btn-default fancybox-button">Zoom</a>
                     <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                   </div>
                 </div>
-                <h3><a href="javascript:;">Temp2</a></h3>
+                <h3><a href="HomeServlet?comid=2">BABY PRODUCT 2</a></h3>
                 <div class="pi-price">$130.00</div>
                 <a href="javaScript:shopCar(2)" class="btn btn-default add2cart">Add to cart</a>
                 <div class="sticker sticker-new"></div>
@@ -141,13 +141,13 @@ Home Page
           <div>
               <div class="product-item">
                 <div class="pi-img-wrapper">
-                  <img src="assets/pages/img/products/model4.jpg" class="img-responsive" alt="Berry Lace Dress">
+                  <img src="../pic/baby & mum/baby/4.jpg" class="img-responsive" alt="Berry Lace Dress">
                   <div>
-                    <a href="assets/pages/img/products/model4.jpg" class="btn btn-default fancybox-button">Zoom</a>
+                    <a href="../pic/baby & mum/baby/4.jpg" class="btn btn-default fancybox-button">Zoom</a>
                     <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                   </div>
                 </div>
-                <h3><a href="javascript:;">Temp3</a></h3>
+                <h3><a href="HomeServlet?comid=3">BABY PRODUCT 3</a></h3>
                 <div class="pi-price">$90.00</div>
                 <a href="javaScript:shopCar(3)" class="btn btn-default add2cart">Add to cart</a>
                 <div class="sticker sticker-new"></div>
@@ -156,13 +156,13 @@ Home Page
           <div>
               <div class="product-item">
                 <div class="pi-img-wrapper">
-                  <img src="assets/pages/img/products/model4.jpg" class="img-responsive" alt="Berry Lace Dress">
+                  <img src="../pic/baby & mum/baby/5.jpg" class="img-responsive" alt="Berry Lace Dress">
                   <div>
-                    <a href="assets/pages/img/products/model4.jpg" class="btn btn-default fancybox-button">Zoom</a>
+                    <a href="../pic/baby & mum/baby/5.jpg" class="btn btn-default fancybox-button">Zoom</a>
                     <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                   </div>
                 </div>
-                <h3><a href="javascript:;">Lux</a></h3>
+                <h3><a href="HomeServlet?comid=4">BABY PRODUCT 4</a></h3>
                 <div class="pi-price">$50.00</div>
                 <a href="javaScript:shopCar(4)" class="btn btn-default add2cart">Add to cart</a>
                 <div class="sticker sticker-new"></div>
@@ -171,13 +171,13 @@ Home Page
           <div>
               <div class="product-item">
                 <div class="pi-img-wrapper">
-                  <img src="assets/pages/img/products/model4.jpg" class="img-responsive" alt="Berry Lace Dress">
+                  <img src="../pic/baby & mum/baby/6.jpg" class="img-responsive" alt="Berry Lace Dress">
                   <div>
-                    <a href="assets/pages/img/products/model4.jpg" class="btn btn-default fancybox-button">Zoom</a>
+                    <a href="../pic/baby & mum/baby/6.jpg" class="btn btn-default fancybox-button">Zoom</a>
                     <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                   </div>
                 </div>
-                <h3><a href="javascript:;">Temp4</a></h3>
+                <h3><a href="HomeServlet?comid=5">BABY PRODUCT 5</a></h3>
                 <div class="pi-price">$30.00</div>
                 <a href="javaScript:shopCar(5)" class="btn btn-default add2cart">Add to cart</a>
                 <div class="sticker sticker-new"></div>
@@ -206,7 +206,7 @@ Home Page
                   <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                 </div>
               </div>
-              <h3><a href="shop-item.html">Temp5</a></h3>
+              <h3><a href="HomeServlet?comid=6">BABY PRODUCT 6</a></h3>
               <div class="pi-price">$20.00</div>
               <a href="javaScript:shopCar(6)" class="btn btn-default add2cart">Add to cart</a>
               <div class="sticker sticker-sale"></div>
@@ -215,13 +215,13 @@ Home Page
           <div>
             <div class="product-item">
               <div class="pi-img-wrapper">
-                <img src="assets/pages/img/products/model1.jpg" class="img-responsive" alt="Berry Lace Dress">
+                <img src="../pic/baby & mum/mum/1.jpg" class="img-responsive" alt="Berry Lace Dress">
                 <div>
-                  <a href="assets/pages/img/products/model1.jpg" class="btn btn-default fancybox-button">Zoom</a>
+                  <a href="../pic/baby & mum/mum/1.jpg" class="btn btn-default fancybox-button">Zoom</a>
                   <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                 </div>
               </div>
-              <h3><a href="shop-item.html">Lux1</a></h3>
+              <h3><a href="HomeServlet?comid=7">MUM PRODUCT 1</a></h3>
               <div class="pi-price">$50.00</div>
               <a href="javaScript:shopCar(7)" class="btn btn-default add2cart">Add to cart</a>
               <div class="sticker sticker-sale"></div>
@@ -230,13 +230,13 @@ Home Page
           <div>
             <div class="product-item">
               <div class="pi-img-wrapper">
-                <img src="assets/pages/img/products/model1.jpg" class="img-responsive" alt="Berry Lace Dress">
+                <img src="../pic/baby & mum/mum/2.jpg" class="img-responsive" alt="Berry Lace Dress">
                 <div>
-                  <a href="assets/pages/img/products/model1.jpg" class="btn btn-default fancybox-button">Zoom</a>
+                  <a href="../pic/baby & mum/mum/2.jpg" class="btn btn-default fancybox-button">Zoom</a>
                   <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                 </div>
               </div>
-              <h3><a href="shop-item.html">Lux2</a></h3>
+              <h3><a href="HomeServlet?comid=8">MUM PRODUCT 2</a></h3>
               <div class="pi-price">$100.00</div>
               <a href="javaScript:shopCar(8)" class="btn btn-default add2cart">Add to cart</a>
               <div class="sticker sticker-sale"></div>
@@ -245,13 +245,13 @@ Home Page
           <div>
             <div class="product-item">
               <div class="pi-img-wrapper">
-                <img src="assets/pages/img/products/model1.jpg" class="img-responsive" alt="Berry Lace Dress">
+                <img src="../pic/baby & mum/mum/3.jpg" class="img-responsive" alt="Berry Lace Dress">
                 <div>
-                  <a href="assets/pages/img/products/model1.jpg" class="btn btn-default fancybox-button">Zoom</a>
+                  <a href="../pic/baby & mum/mum/3.jpg" class="btn btn-default fancybox-button">Zoom</a>
                   <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                 </div>
               </div>
-              <h3><a href="shop-item.html">Temp 6</a></h3>
+              <h3><a href="HomeServlet?comid=9">MUM PRODUCT 3</a></h3>
               <div class="pi-price">$80.00</div>
               <a href="javaScript:shopCar(9)" class="btn btn-default add2cart">Add to cart</a>
               <div class="sticker sticker-sale"></div>
@@ -260,13 +260,13 @@ Home Page
           <div>
             <div class="product-item">
               <div class="pi-img-wrapper">
-                <img src="assets/pages/img/products/model1.jpg" class="img-responsive" alt="Berry Lace Dress">
+                <img src="../pic/baby & mum/mum/4.jpg" class="img-responsive" alt="Berry Lace Dress">
                 <div>
-                  <a href="assets/pages/img/products/model1.jpg" class="btn btn-default fancybox-button">Zoom</a>
+                  <a href="../pic/baby & mum/mum/4.jpg" class="btn btn-default fancybox-button">Zoom</a>
                   <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                 </div>
               </div>
-              <h3><a href="shop-item.html">Temp 7</a></h3>
+              <h3><a href="HomeServlet?comid=10">MUM PRODUCT 4</a></h3>
               <div class="pi-price">$75.00</div>
               <a href="javaScript:shopCar(10)" class="btn btn-default add2cart">Add to cart</a>
               <div class="sticker sticker-sale"></div>
@@ -292,7 +292,6 @@ Home Page
      		http.onreadystatechange = function(){
      			if(http.readyState=='4' && http.status=='200'){
      				document.getElementById("shopCount").innerHTML = http.responseText;
-     				document.getElementById("shopTotalPrice").innerHTML = http.responseText;
      			}
      		}
      	}

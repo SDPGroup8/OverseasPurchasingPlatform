@@ -122,15 +122,14 @@
 									</div>
 								</div>
 								<div class="description">
-									<p>${com.comdesc }.</p>
+									<p>${com.comdesc }</p>
 								</div>
 								<div class="product-page-options">
 									<div class="product-quantity">
 										<input id="product-quantity" type="text" value="1" readonly
 											class="form-control input-sm">
 									</div>
-									<button class="btn btn-primary" type="submit">Add to
-										cart</button>
+									  <a href="javaScript:shopCar(${com.comid })" class="btn btn-default add2cart">Add to cart</a>
 								</div>
 
 							</div>
@@ -146,7 +145,7 @@
 							</ul>
 							<div id="myTabContent" class="tab-content">
 								<div class="tab-pane fade" id="Description">
-									<p>{com.comdesc}</p>
+									<p>${com.comdesc}</p>
 								</div>
 								<div class="tab-pane fade" id="Information">
 									<table class="datasheet">
@@ -250,5 +249,20 @@
 	<jsp:include page="shop-footer.jsp">
 		<jsp:param value="1" name="flag" />
 	</jsp:include>
+	<script type="text/javascript">
+     	function shopCar(comid){
+     		//1.Gets the XMLHttpRequest object
+     		var http = new XMLHttpRequest();
+     		//2.send request
+     		http.open("GET","ShopCarServlet?comid="+comid,true);
+     		http.send();
+     		http.onreadystatechange = function(){
+     			if(http.readyState=='4' && http.status=='200'){
+     				document.getElementById("shopCount").innerHTML = http.responseText;
+     			}
+     			
+     		}
+     	}
+     </script>
 </body>
 </html>

@@ -15,8 +15,8 @@
           <div class="col-md-10 col-sm-10">
             <div class="pull-right">
               <label class="control-label">Show:</label>
-              <select class="form-control input-sm" onchange="changePageSize(this.value)">
-                <option value="6" >6</option>
+              <select class="form-control input-sm" onchange="changePageSize(this.value)" name="s">
+                <option value="6" selected>6</option>
                 <option value="9">9</option>
                 <option value="12">12</option>
                 <option value="15">15</option>
@@ -40,6 +40,12 @@
         </div>
         <script type="text/javascript">
         function changePageSize(size){
+        	 var selects = document.getElementsByName("s");
+             for(var len=selects.length,i=0;i<len;i++){
+               if(selects[i].value==size){
+            	   selects[i].selected=true;
+               }
+             }
 			document.getElementById("currentPage").value = 1;
 			document.getElementById("pageSize").value = size;
 			document.getElementById("myForm").submit();
