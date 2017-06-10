@@ -8,20 +8,20 @@ import java.util.List;
  *
  */
 public class OrderBean {
-	private String orderid;
-	private int userid;
-	private double totalprice;
-	private String paytype;
-	private String receivedtype;
-	private String username;
-	private String email;
-	private String phoneno;
-	private String address;
-	private String city;
-	private String postalcode;
-	private String country;
-	private String status;
-	private Date orderdate;
+	private String orderid;//order id
+	private int userid;//user id
+	private double totalprice;//total price
+	private String paytype;//payment method
+	private String receivedtype;//received method
+	private String username;//user name
+	private String email;//email
+	private String phoneno;//phone number
+	private String address;//address of the user
+	private String city;//city of the user
+	private String postalcode;//postal code
+	private String country;//country of the user
+	private String status;//status of the order
+	private Date orderdate;//order date of the order
 	private List<OrderDetailBean> list;
 	public String getOrderid() {
 		return orderid;

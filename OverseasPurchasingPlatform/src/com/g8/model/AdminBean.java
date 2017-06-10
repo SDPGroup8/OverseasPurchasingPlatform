@@ -1,7 +1,11 @@
 package com.g8.model;
 
 import java.sql.Date;
-
+/**
+ * Java Bean Adimin
+ * @author Minghao Yang
+ *
+ */
 public class AdminBean {
 	private int adminid;
 	private String adminname;

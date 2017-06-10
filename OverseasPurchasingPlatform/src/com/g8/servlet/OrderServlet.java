@@ -46,22 +46,32 @@ public class OrderServlet extends HttpServlet {
 			int userId = user.getUserid();
 
 		} else if ("add".equals(task)) {
+			//first name of the user 
 			String firstname = request.getParameter("fistname");
+			//last name of the user
 			String lastname = request.getParameter("lastname");
+			//email of the user
 			String email = request.getParameter("email");
+			//telephone of the user
 			String telephone = request.getParameter("telephone");
+			//postalcode of the user
 			String postalcode = request.getParameter("postalcode");
+			//current address of the user
 			String address = request.getParameter("address");
+			//current city of the user
 			String city = request.getParameter("city");
+			//current country of the user
 			String country = request.getParameter("country");
+			//payment method
 			String paymentmethod = request.getParameter("paymentmethod");
 			HttpSession session = request.getSession();
+			//Get the shop car object from the sessions
 			ShopCar shopCar = (ShopCar) session.getAttribute("SESSION_SHOPCAR");
-			int count = shopCar.getCount();
 			double totalPrice = shopCar.getTotalPrice();
-			int totalType = shopCar.getTotalType();
+			//Get the product list from the shop car
 			List<ProductBean> list = shopCar.getList();
 			List<OrderDetailBean> detailList = new ArrayList<>();
+			//Put the product information into the oder detail
 			for (ProductBean product : list) {
 				OrderDetailBean detail = new OrderDetailBean();
 				detail.setProductid(product.getComid());
@@ -86,19 +96,24 @@ public class OrderServlet extends HttpServlet {
 			order.setTotalprice(totalPrice);// total price of the products
 			order.setReceivedtype("Flat Shipping Rate");// received type
 			String orderId = new Date().getTime() + "";
-			order.setOrderid(orderId);
+			order.setOrderid(orderId);//order id
+			//Add the order
 			service.add(order);
+			//Clear the shop car
 			shopCar.clear();
 			response.sendRedirect("OrderServlet?task=queryById&orderid=" + order.getOrderid());
-		} else if ("queryById".equals(task)) {
+		}  /* Get the order detail according to the order id */
+			else if ("queryById".equals(task)) {
 			String orderId = request.getParameter("orderid");
 			OrderBean order = service.queryById(orderId);
 			request.setAttribute("order", order);
 			request.setAttribute("detaillist", order.getList());
 			request.getRequestDispatcher("../front/filterpage/shop-order-detail.jsp").forward(request, response);
-		} else if ("history".equals(task)) {
+		}   /* Get the order history according to the current user */
+			else if ("history".equals(task)) {
 			HttpSession session = request.getSession();
 			UserBean user = (UserBean) session.getAttribute("user");
+			/* If the user has not login yet */
 			if (user != null) {
 				int userId = user.getUserid();
 				List<OrderBean> list = new ArrayList<>();

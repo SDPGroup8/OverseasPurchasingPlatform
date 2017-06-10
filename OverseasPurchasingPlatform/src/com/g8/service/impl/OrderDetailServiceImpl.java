@@ -34,10 +34,6 @@ public class OrderDetailServiceImpl implements IOrderDetailService{
 		return dao.query(detail);
 	}
 
-	@Override
-	public OrderDetailBean queryById(String orderId) {
-		// TODO Auto-generated method stub
-		return dao.queryById(orderId);
-	}
+
 	
 }

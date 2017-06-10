@@ -1,11 +1,12 @@
-package com.g8.dao;
+package com.g8.service;
 
 import java.util.List;
 
 import com.g8.model.OrderBean;
 import com.g8.utils.BasePage;
 
-public interface IOrderDao {
+public interface IOrderService {
+
 	/**
 	 * Add order
 	 * @param order

@@ -32,11 +32,6 @@ public class OrderDetailImpl extends BaseDao implements IOrderDetailDao{
 		return super.baseQuery(sql, OrderDetailBean.class);
 	}
 
-	@Override
-	public OrderDetailBean queryById(String orderId) {
-		sql = "select * from t_orderdetail where orderid = ?";
-		return super.baseQueryById(sql, OrderDetailBean.class, orderId);
-	}
 
 	@Override
 	public List<OrderDetailBean> queryByOrderId(OrderDetailBean order,String orderid) {

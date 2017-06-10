@@ -1,10 +1,11 @@
-package com.g8.dao;
+package com.g8.service;
 
 import java.util.List;
 
 import com.g8.model.OrderDetailBean;
 
-public interface IOrderDetailDao {
+public interface IOrderDetailService {
+	
 	/**
 	 * Add order detail
 	 * @param detail
@@ -29,11 +30,4 @@ public interface IOrderDetailDao {
 	 * @return
 	 */
 	public List<OrderDetailBean> query(OrderDetailBean detail);
-	/**
-	 * Query the order detail according to the order id
-	 * @param detail
-	 * @param orderid
-	 * @return
-	 */
-	public List<OrderDetailBean> queryByOrderId(OrderDetailBean detail,String orderid);
 }

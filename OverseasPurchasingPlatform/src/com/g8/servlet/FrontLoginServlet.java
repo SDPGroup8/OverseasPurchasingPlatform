@@ -36,7 +36,6 @@ public class FrontLoginServlet extends HttpServlet {
 			// 2.Through the login method in the service to verify whether the
 			// successful login
 			UserBean user = service.login(userName, password);
-			System.out.println(user);
 			HttpSession session = request.getSession();
 			// 3. Make a different response based on the results of the
 			if (code.equals(rand)) {

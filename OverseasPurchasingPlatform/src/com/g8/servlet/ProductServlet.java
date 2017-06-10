@@ -174,7 +174,7 @@ public class ProductServlet extends HttpServlet {
 		// Get the conditions for the user's submitted query
 		String productname = request.getParameter("productname");
 		ProductBean product = new ProductBean();
-		if (WebUtils.isEmpty(productname)) {
+		if (!WebUtils.isEmpty(productname)) {
 			//indicates that the user wants to find the data by product name
 			product.setComname(productname);
 		}
