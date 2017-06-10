@@ -27,7 +27,7 @@
             <a href="HomeServlet?task=productlist&smalltypeid=1" class="collapsed">
               <i class="fa fa-angle-right"></i>Baby &amp; Child Care</a>
             <ul class="dropdown-menu" style="display:block;">
-              <li class="list-group-item dropdown clearfix active"><a href="HomeServlet?task=productlist&smalltypeid=5" class="collapsed"><i class="fa fa-angle-right"></i> For Baby &amp; Child </a></li>
+              <li><a href="HomeServlet?task=productlist&smalltypeid=5" class="collapsed"><i class="fa fa-angle-right"></i> For Baby &amp; Child </a></li>
               <li><a href="HomeServlet?task=productlist&smalltypeid=6"><i class="fa fa-angle-right"></i> For Mum</a></li>
               <li><a href="HomeServlet?task=productlist&smalltypeid=7"><i class="fa fa-angle-right"></i> Accessories</a></li>
             </ul>
@@ -36,28 +36,28 @@
             <a href="shop-product-list.html" class="collapsed">
               <i class="fa fa-angle-right"></i>Natural Health</a>
             <ul class="dropdown-menu" style="display:block;">
-              <li class="list-group-item dropdown clearfix active"><a href="shop-product-list.html" class="collapsed"><i class="fa fa-angle-right"></i> Bone &amp; Joint Support </a></li>
-              <li><a href="HomeServlet?task=productlist&smalltypeid=1"><i class="fa fa-angle-right"></i> Brain Health</a></li>
-              <li><a href="HomeServlet?task=productlist&smalltypeid=2"><i class="fa fa-angle-right"></i> Eye Health</a></li>
-              <li><a href="HomeServlet?task=productlist&smalltypeid=3"><i class="fa fa-angle-right"></i> Heart Health</a></li>
-              <li><a href="HomeServlet?task=productlist&smalltypeid=3"><i class="fa fa-angle-right"></i> Diet &amp; Weight Loss</a></li>
-              <li class="list-group-item dropdown clearfix active"><a href="shop-product-list.html" class="collapsed"><i class="fa fa-angle-right"></i> MultiVitamin &amp; Minerals </a></li>
+              <li><a href="HomeServlet?task=productlist&smalltypeid=8" class="collapsed"><i class="fa fa-angle-right"></i> Bone &amp; Joint Support </a></li>
+              <li><a href="HomeServlet?task=productlist&smalltypeid=9"><i class="fa fa-angle-right"></i> Brain Health</a></li>
+              <li><a href="HomeServlet?task=productlist&smalltypeid=10"><i class="fa fa-angle-right"></i> Eye Health</a></li>
+              <li><a href="HomeServlet?task=productlist&smalltypeid=11"><i class="fa fa-angle-right"></i> Heart Health</a></li>
+              <li><a href="HomeServlet?task=productlist&smalltypeid=12"><i class="fa fa-angle-right"></i> Diet &amp; Weight Loss</a></li>
+              <li><a href="HomeServlet?task=productlist&smalltypeid=13" class="collapsed"><i class="fa fa-angle-right"></i> MultiVitamin &amp; Minerals </a></li>
             </ul>
           </li>
           <li class="list-group-item clearfix dropdown active">
             <a href="shop-product-list.html" class="collapsed">
               <i class="fa fa-angle-right"></i>Beauty</a>
             <ul class="dropdown-menu" style="display:block;">
-              <li class="list-group-item dropdown clearfix active"><a href="shop-product-list.html" class="collapsed"><i class="fa fa-angle-right"></i> Skin Care </a></li>
-              <li><a href="HomeServlet?task=productlist&smalltypeid=2"><i class="fa fa-angle-right"></i> Body Care</a></li>
-              <li><a href="HomeServlet?task=productlist&smalltypeid=1"><i class="fa fa-angle-right"></i> Hair Care</a></li>
+              <li><a href="HomeServlet?task=productlist&smalltypeid=14" class="collapsed"><i class="fa fa-angle-right"></i> Skin Care </a></li>
+              <li><a href="HomeServlet?task=productlist&smalltypeid=14"><i class="fa fa-angle-right"></i> Body Care</a></li>
+              <li><a href="HomeServlet?task=productlist&smalltypeid=14"><i class="fa fa-angle-right"></i> Hair Care</a></li>
             </ul>
           </li>
           <li class="list-group-item clearfix dropdown active">
             <a href="HomeServlet?task=productlist&smalltypeid=3" class="collapsed">
               <i class="fa fa-angle-right"></i>Food</a>
             <ul class="dropdown-menu" style="display:block;">
-              <li class="list-group-item dropdown clearfix active"><a href="shop-product-list.html" class="collapsed"><i class="fa fa-angle-right"></i> Beverage </a></li>
+              <li><a href="shop-product-list.html" class="collapsed"><i class="fa fa-angle-right"></i> Beverage </a></li>
               <li><a href="HomeServlet?task=productlist&smalltypeid=2"><i class="fa fa-angle-right"></i> Fruit</a></li>
               <li><a href="HomeServlet?task=productlist&smalltypeid=1"><i class="fa fa-angle-right"></i> Snack</a></li>
               <li><a href="HomeServlet?task=productlist&smalltypeid=3"><i class="fa fa-angle-right"></i> Wine</a></li>

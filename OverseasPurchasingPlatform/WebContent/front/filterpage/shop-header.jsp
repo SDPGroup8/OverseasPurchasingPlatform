@@ -117,21 +117,21 @@
             <li class="dropdown active">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">Baby &amp; Child Care</a>               
               <ul class="dropdown-menu">
-                <li><a href="../HomeServlet?task=productlist&smalltypeid=1">For Baby &amp; Child</a></li>
-                <li><a href="../HomeServlet?task=productlist&smalltypeid=2">For Mum</a></li>
-                <li><a href="../HomeServlet?task=productlist&smalltypeid=3">Accessories</a></li>
+                <li><a href="../HomeServlet?task=productlist&smalltypeid=5">For Baby &amp; Child</a></li>
+                <li><a href="../HomeServlet?task=productlist&smalltypeid=6">For Mum</a></li>
+                <li><a href="../HomeServlet?task=productlist&smalltypeid=7">Accessories</a></li>
               </ul>
             </li>
             
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">Natural Health</a>               
               <ul class="dropdown-menu">
-                <li><a href="../HomeServlet?task=productlist&smalltypeid=1">Bone &amp; Joint Support</a></li>
-                <li><a href="../HomeServlet?task=productlist&smalltypeid=2">Brain Health</a></li>
-                <li><a href="../HomeServlet?task=productlist&smalltypeid=3">Eye Health</a></li>
-                <li><a href="../HomeServlet?task=productlist&smalltypeid=1">Heart Health</a></li>
-                <li><a href="../HomeServlet?task=productlist&smalltypeid=2">Diet &amp; Weight Loss</a></li>
-                <li><a href="../HomeServlet?task=productlist&smalltypeid=3">MultiVitamin &amp; Minerals</a></li>
+                <li><a href="../HomeServlet?task=productlist&smalltypeid=8">Bone &amp; Joint Support</a></li>
+                <li><a href="../HomeServlet?task=productlist&smalltypeid=9">Brain Health</a></li>
+                <li><a href="../HomeServlet?task=productlist&smalltypeid=10">Eye Health</a></li>
+                <li><a href="../HomeServlet?task=productlist&smalltypeid=11">Heart Health</a></li>
+                <li><a href="../HomeServlet?task=productlist&smalltypeid=12">Diet &amp; Weight Loss</a></li>
+                <li><a href="../HomeServlet?task=productlist&smalltypeid=13">MultiVitamin &amp; Minerals</a></li>
               </ul>
             </li>
 
