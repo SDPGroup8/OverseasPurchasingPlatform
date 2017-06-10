@@ -32,24 +32,24 @@
   <!-- Fonts END -->
 
   <!-- Global styles START -->          
-  <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../front/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../front/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Global styles END --> 
    
   <!-- Page level plugin styles START -->
-  <link href="assets/pages/css/animate.css" rel="stylesheet">
-  <link href="assets/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet">
-  <link href="assets/plugins/owl.carousel/assets/owl.carousel.css" rel="stylesheet">
+  <link href="../front/assets/pages/css/animate.css" rel="stylesheet">
+  <link href="../front/assets/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet">
+  <link href="../front/assets/plugins/owl.carousel/../front/assets/owl.carousel.css" rel="stylesheet">
   <!-- Page level plugin styles END -->
 
   <!-- Theme styles START -->
-  <link href="assets/pages/css/components.css" rel="stylesheet">
-  <link href="assets/pages/css/slider.css" rel="stylesheet">
-  <link href="assets/pages/css/style-shop.css" rel="stylesheet" type="text/css">
-  <link href="assets/corporate/css/style.css" rel="stylesheet">
-  <link href="assets/corporate/css/style-responsive.css" rel="stylesheet">
-  <link href="assets/corporate/css/themes/blue.css" rel="stylesheet" id="style-color">
-  <link href="assets/corporate/css/custom.css" rel="stylesheet">
+  <link href="../front/assets/pages/css/components.css" rel="stylesheet">
+  <link href="../front/assets/pages/css/slider.css" rel="stylesheet">
+  <link href="../front/assets/pages/css/style-shop.css" rel="stylesheet" type="text/css">
+  <link href="../front/assets/corporate/css/style.css" rel="stylesheet">
+  <link href="../front/assets/corporate/css/style-responsive.css" rel="stylesheet">
+  <link href="../front/assets/corporate/css/themes/blue.css" rel="stylesheet" id="style-color">
+  <link href="../front/assets/corporate/css/custom.css" rel="stylesheet">
   <!-- Theme styles END -->
 </head>
 <!-- Head END -->
@@ -97,38 +97,9 @@
     <!-- BEGIN HEADER -->
     <div class="header">
       <div class="container">
-        <a class="site-logo" href="shop-index.html"><img src="assets/corporate/img/logos/logo-shop-blue.png" alt="Metronic Shop UI"></a>
+        <a class="site-logo" href="../front/HomeServlet?task=home"><img src="../front/assets/corporate/img/logos/logo-shop-blue.png" alt="Metronic Shop UI"></a>
 
         <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
-
-        <!-- BEGIN CART -->
-        <div class="top-cart-block">
-          <div class="top-cart-info">
-            <a href="javascript:void(0);" class="top-cart-info-count">1 items</a>
-            <a href="javascript:void(0);" class="top-cart-info-value">$100</a>
-          </div>
-          <i class="fa fa-shopping-cart"></i>
-                        
-          <div class="top-cart-content-wrapper">
-            <div class="top-cart-content">
-              <ul class="scroller" style="height: 250px;">
-                <li>
-                  <a href="shop-item.html"><img src="assets/pages/img/cart-img.jpg" alt="Rolex Classic Watch" width="37" height="34"></a>
-                  <span class="cart-content-count">x 1</span>
-                  <strong><a href="shop-item.html">Rolex Classic Watch</a></strong>
-                  <em>$100</em>
-                  <a href="javascript:void(0);" class="del-goods">&nbsp;</a>
-                </li>
-              </ul>
-              <div class="text-right">
-                <a href="shop-shopping-cart.html" class="btn btn-default">View Cart</a>
-                <a href="shop-checkout.html" class="btn btn-primary">Checkout</a>
-              </div>
-            </div>
-          </div>            
-        </div>
-        <!--END CART -->
-
         <!-- BEGIN NAVIGATION -->
         <div class="header-navigation">
           <ul>
@@ -378,12 +349,12 @@
               <div class="row">
                 <div class="col-md-6 col-sm-6 col-xs-3">
                   <div class="product-main-image">
-                    <img src="assets/pages/img/products/model7.jpg" alt="Cool green dress with red bell" class="img-responsive">
+                    <img src="../front/assets/pages/img/products/model7.jpg" alt="Cool green dress with red bell" class="img-responsive">
                   </div>
                   <div class="product-other-images">
-                    <a href="javascript:;" class="active"><img alt="Berry Lace Dress" src="assets/pages/img/products/model3.jpg"></a>
-                    <a href="javascript:;"><img alt="Berry Lace Dress" src="assets/pages/img/products/model4.jpg"></a>
-                    <a href="javascript:;"><img alt="Berry Lace Dress" src="assets/pages/img/products/model5.jpg"></a>
+                    <a href="javascript:;" class="active"><img alt="Berry Lace Dress" src="../front/assets/pages/img/products/model3.jpg"></a>
+                    <a href="javascript:;"><img alt="Berry Lace Dress" src="../front/assets/pages/img/products/model4.jpg"></a>
+                    <a href="javascript:;"><img alt="Berry Lace Dress" src="../front/assets/pages/img/products/model5.jpg"></a>
                   </div>
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-9">
@@ -436,23 +407,23 @@
     <!-- Load javascripts at bottom, this will reduce page load time -->
     <!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
     <!--[if lt IE 9]>
-    <script src="assets/plugins/respond.min.js"></script>  
+    <script src="../front/assets/plugins/respond.min.js"></script>  
     <![endif]-->
-    <script src="assets/plugins/jquery.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/jquery-migrate.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>      
-    <script src="assets/corporate/scripts/back-to-top.js" type="text/javascript"></script>
-    <script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <script src="../front/assets/plugins/jquery.min.js" type="text/javascript"></script>
+    <script src="../front/assets/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+    <script src="../front/assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>      
+    <script src="../front/assets/corporate/scripts/back-to-top.js" type="text/javascript"></script>
+    <script src="../front/assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
     <!-- END CORE PLUGINS -->
 
     <!-- BEGIN PAGE LEVEL JAVASCRIPTS (REQUIRED ONLY FOR CURRENT PAGE) -->
-    <script src="assets/plugins/fancybox/source/jquery.fancybox.pack.js" type="text/javascript"></script><!-- pop up -->
-    <script src="assets/plugins/owl.carousel/owl.carousel.min.js" type="text/javascript"></script><!-- slider for products -->
-    <script src='assets/plugins/zoom/jquery.zoom.min.js' type="text/javascript"></script><!-- product zoom -->
-    <script src="assets/plugins/bootstrap-touchspin/bootstrap.touchspin.js" type="text/javascript"></script><!-- Quantity -->
+    <script src="../front/assets/plugins/fancybox/source/jquery.fancybox.pack.js" type="text/javascript"></script><!-- pop up -->
+    <script src="../front/assets/plugins/owl.carousel/owl.carousel.min.js" type="text/javascript"></script><!-- slider for products -->
+    <script src='../front/assets/plugins/zoom/jquery.zoom.min.js' type="text/javascript"></script><!-- product zoom -->
+    <script src="../front/assets/plugins/bootstrap-touchspin/bootstrap.touchspin.js" type="text/javascript"></script><!-- Quantity -->
 
-    <script src="assets/corporate/scripts/layout.js" type="text/javascript"></script>
-    <script src="assets/pages/scripts/bs-carousel.js" type="text/javascript"></script>
+    <script src="../front/assets/corporate/scripts/layout.js" type="text/javascript"></script>
+    <script src="../front/assets/pages/scripts/bs-carousel.js" type="text/javascript"></script>
     <script type="text/javascript">
         jQuery(document).ready(function() {
             Layout.init();    
