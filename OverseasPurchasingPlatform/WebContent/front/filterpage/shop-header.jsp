@@ -96,37 +96,18 @@
     <!-- BEGIN HEADER -->
     <div class="header">
       <div class="container">
-        <a class="site-logo" href="../HomeServlet?task=home"><img src="../assets/corporate/img/logos/logo-shop-red.png" alt="Metronic Shop UI"></a>
+        <a class="site-logo" href="../HomeServlet?task=home"><img src="../assets/corporate/img/logos/logo-shop-blue.png" alt="Metronic Shop UI"></a>
 
         <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
 
         <!-- BEGIN CART -->
         <div class="top-cart-block">
           <div class="top-cart-info">            
-            <a href="../shop-shoppingcart.jsp" class="top-cart-info-count"><span id="shopCount" >${SESSION_SHOPCAR.count}</span>  items</a>
+            <a href="../shop-shoppingcart.jsp" class="top-cart-info-count"><span id="shopCount">${SESSION_SHOPCAR.count}</span>  items</a>
         
           </div>
           <i class="fa fa-shopping-cart"></i>
-                        
-          <div class="top-cart-content-wrapper">
-            <div class="top-cart-content">
-              <ul class="scroller" style="height: 250px;">
-              <c:forEach var="com" items="${SESSION_SHOPCAR.list }">  
-                <li>
-                  <a href="shop-item.jsp"><img src="../assets/pages/img/products/model1.jpg" alt="Rolex Classic Watch" width="37" height="34"></a>
-                  <span class="cart-content-count">x ${com.shopNum }</span>
-                  <strong><a href="shop-item.jsp">${com.comname }</a></strong>
-                  <em>$${ com.shopNum*com.price}</em>
-                  <a href="javascript:delGoods(${ com.comid});" class="del-goods">&nbsp;</a>
-                </li>
-              </c:forEach>
-              </ul>
-              <div class="text-right">
-                <a href="shop-shoppingcart.jsp" class="btn btn-default">View Cart</a>
-                <a href="shop-checkout.jsp" class="btn btn-primary">Checkout</a>
-              </div>
-            </div>
-          </div>            
+                                   
         </div>
         <!--END CART -->
 
@@ -136,40 +117,40 @@
             <li class="dropdown active">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">Baby &amp; Child Care</a>               
               <ul class="dropdown-menu">
-                <li><a href="HomeServlet?task=productlist&smalltypeid=1">For Baby &amp; Child</a></li>
-                <li><a href="HomeServlet?task=productlist&smalltypeid=2">For Mum</a></li>
-                <li><a href="HomeServlet?task=productlist&smalltypeid=3">Accessories</a></li>
+                <li><a href="../HomeServlet?task=productlist&smalltypeid=1">For Baby &amp; Child</a></li>
+                <li><a href="../HomeServlet?task=productlist&smalltypeid=2">For Mum</a></li>
+                <li><a href="../HomeServlet?task=productlist&smalltypeid=3">Accessories</a></li>
               </ul>
             </li>
             
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">Natural Health</a>               
               <ul class="dropdown-menu">
-                <li><a href="HomeServlet?task=productlist&smalltypeid=1">Bone &amp; Joint Support</a></li>
-                <li><a href="HomeServlet?task=productlist&smalltypeid=2">Brain Health</a></li>
-                <li><a href="HomeServlet?task=productlist&smalltypeid=3">Eye Health</a></li>
-                <li><a href="HomeServlet?task=productlist&smalltypeid=1">Heart Health</a></li>
-                <li><a href="HomeServlet?task=productlist&smalltypeid=2">Diet &amp; Weight Loss</a></li>
-                <li><a href="HomeServlet?task=productlist&smalltypeid=3">MultiVitamin &amp; Minerals</a></li>
+                <li><a href="../HomeServlet?task=productlist&smalltypeid=1">Bone &amp; Joint Support</a></li>
+                <li><a href="../HomeServlet?task=productlist&smalltypeid=2">Brain Health</a></li>
+                <li><a href="../HomeServlet?task=productlist&smalltypeid=3">Eye Health</a></li>
+                <li><a href="../HomeServlet?task=productlist&smalltypeid=1">Heart Health</a></li>
+                <li><a href="../HomeServlet?task=productlist&smalltypeid=2">Diet &amp; Weight Loss</a></li>
+                <li><a href="../HomeServlet?task=productlist&smalltypeid=3">MultiVitamin &amp; Minerals</a></li>
               </ul>
             </li>
 
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">Beauty</a>             
               <ul class="dropdown-menu">
-                <li><a href="HomeServlet?task=productlist&smalltypeid=2">Skin Care</a></li>
-                <li><a href="HomeServlet?task=productlist&smalltypeid=1">Body Care</a></li>
-                <li><a href="HomeServlet?task=productlist&smalltypeid=3">Hair Care</a></li>               
+                <li><a href="../HomeServlet?task=productlist&smalltypeid=2">Skin Care</a></li>
+                <li><a href="../HomeServlet?task=productlist&smalltypeid=1">Body Care</a></li>
+                <li><a href="../HomeServlet?task=productlist&smalltypeid=3">Hair Care</a></li>               
               </ul>
             </li>          
 
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">Food</a>               
               <ul class="dropdown-menu">              
-                <li><a href="HomeServlet?task=productlist&smalltypeid=2">Beverage</a></li>                
-                <li><a href="HomeServlet?task=productlist&smalltypeid=2">Fruit</a></li>
-                <li><a href="HomeServlet?task=productlist&smalltypeid=1">Snack</a></li>
-                <li><a href="HomeServlet?task=productlist&smalltypeid=3">Wine</a></li>
+                <li><a href="../HomeServlet?task=productlist&smalltypeid=2">Beverage</a></li>                
+                <li><a href="../HomeServlet?task=productlist&smalltypeid=2">Fruit</a></li>
+                <li><a href="../HomeServlet?task=productlist&smalltypeid=1">Snack</a></li>
+                <li><a href="../HomeServlet?task=productlist&smalltypeid=3">Wine</a></li>
               </ul>
             </li>
 
@@ -178,7 +159,7 @@
               <span class="sep"></span>
               <i class="fa fa-search search-btn"></i>
               <div class="search-box">
-                <form action="HomeServlet?task=productlist" method="post" id="myForm">
+                <form action="../HomeServlet?task=productlist" method="post" id="myForm">
                   <div class="input-group">
                    <input type="hidden" name="currentPage" id="currentPage" value="${page.currentPage }">
 			       <input type="hidden" name="pageSize" id="pageSize" value="${page.pageSize }">

@@ -340,11 +340,11 @@ function validate_info() {
                       </li>
                       <li>
                         <em>Shipping cost</em>
-                        <strong class="price"><span>$</span>${SESSION_SHOPCAR.count == 0 ? 0.00 : 3.00 }</strong>
+                        <strong class="price"><span>$</span>3.00</strong>
                       </li>
                       <li class="checkout-total-price">
                         <em>Total</em>
-                        <strong class="price"><span>$</span>${ SESSION_SHOPCAR.count == 0 ? 0.00 : SESSION_SHOPCAR.totalPrice+3.0}</strong>
+                        <strong class="price"><span>$</span>SESSION_SHOPCAR.totalPrice+3.0</strong>
                       </li>
                     </ul>
                   </div>
