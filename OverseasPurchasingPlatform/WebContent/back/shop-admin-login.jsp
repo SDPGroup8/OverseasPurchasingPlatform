@@ -103,69 +103,48 @@
 
         <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
 
-
-        <!-- BEGIN NAVIGATION -->
+  <!-- BEGIN NAVIGATION -->
         <div class="header-navigation">
           <ul>
-            <li class="dropdown">
+            <li class="dropdown active">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">Baby &amp; Child Care</a>               
               <ul class="dropdown-menu">
-                <li><a href="shop-for-baby.html">For Baby &amp; Child</a></li>
-                <li><a href="shop-for-mum.html">For Mum</a></li>
-                <li><a href="shop-accessories.html">Accessories</a></li>
+                <li><a href="../front/HomeServlet?task=productlist&smalltypeid=5">For Baby &amp; Child</a></li>
+                <li><a href="../front/HomeServlet?task=productlist&smalltypeid=6">For Mum</a></li>
+                <li><a href="../front/HomeServlet?task=productlist&smalltypeid=7">Accessories</a></li>
               </ul>
             </li>
             
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">Natural Health</a>               
               <ul class="dropdown-menu">
-                <li><a href="shop-bone-joint-health.html">Bone &amp; Joint Support</a></li>
-                <li><a href="shop-brain-health.html">Brain Health</a></li>
-                <li><a href="shop-eye-health.html">Eye Health</a></li>
-                <li><a href="shop-heart-health.html">Heart Health</a></li>
-                <li><a href="shop-diet-weight-loss.html">Diet &amp; Weight Loss</a></li>
-                <li><a href="shop-multivitamin-minerals.html">MultiVitamin &amp; Minerals</a></li>
+                <li><a href="../front/HomeServlet?task=productlist&smalltypeid=8">Bone &amp; Joint Support</a></li>
+                <li><a href="../front/HomeServlet?task=productlist&smalltypeid=9">Brain Health</a></li>
+                <li><a href="../front/HomeServlet?task=productlist&smalltypeid=10">Eye Health</a></li>
+                <li><a href="../front/HomeServlet?task=productlist&smalltypeid=11">Heart Health</a></li>
+                <li><a href="../front/HomeServlet?task=productlist&smalltypeid=12">Diet &amp; Weight Loss</a></li>
+                <li><a href="../front/HomeServlet?task=productlist&smalltypeid=13">MultiVitamin &amp; Minerals</a></li>
               </ul>
             </li>
 
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">Beauty</a>             
               <ul class="dropdown-menu">
-                <li><a href="shop-skin-care.html">Skin Care</a></li>
-                <li><a href="shop-boby-care.html">Body Care</a></li>
-                <li><a href="shop-hair-care.html">Hair Care</a></li>               
+                <li><a href="../front/HomeServlet?task=productlist&smalltypeid=2">Skin Care</a></li>
+                <li><a href="../front/HomeServlet?task=productlist&smalltypeid=1">Body Care</a></li>
+                <li><a href="../front/HomeServlet?task=productlist&smalltypeid=3">Hair Care</a></li>               
               </ul>
             </li>          
 
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">Food</a>               
               <ul class="dropdown-menu">              
-                <li><a href="shop-beverage.html">Beverage</a></li>                
-                <li><a href="shop-fruit.html">Fruit</a></li>
-                <li><a href="shop-snack.html">Snack</a></li>
-                <li><a href="shop-wine.html">Wine</a></li>
+                <li><a href="../front/HomeServlet?task=productlist&smalltypeid=2">Beverage</a></li>                
+                <li><a href="../front/HomeServlet?task=productlist&smalltypeid=2">Fruit</a></li>
+                <li><a href="../front/HomeServlet?task=productlist&smalltypeid=1">Snack</a></li>
+                <li><a href="../front/HomeServlet?task=productlist&smalltypeid=3">Wine</a></li>
               </ul>
             </li>
-
-            <!-- BEGIN TOP SEARCH -->
-            <li class="menu-search">
-              <span class="sep"></span>
-              <i class="fa fa-search search-btn"></i>
-              <div class="search-box">
-                <form action="#">
-                  <div class="input-group">
-                    <input type="text" placeholder="Search" class="form-control">
-                    <span class="input-group-btn">
-                      <button class="btn btn-primary" type="submit">Search</button>
-                    </span>
-                  </div>
-                </form>
-              </div> 
-            </li>
-            <!-- END TOP SEARCH -->
-          </ul>
-        </div>
-        <!-- END NAVIGATION -->
       </div>
     </div>
     <!-- Header END -->
