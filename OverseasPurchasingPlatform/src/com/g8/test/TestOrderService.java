@@ -30,6 +30,7 @@ public class TestOrderService {
 	public void testAdd() {
 		List<OrderDetailBean> list = new ArrayList<>();
 		OrderBean order = new OrderBean();
+		order.setOrderid("test");
 		order.setAddress("23 Eban Ave, Auckland");// Shipping address
 		order.setEmail("test@gmail.com");// email
 		order.setPhoneno("(022) 432-8767");// phone number
@@ -54,6 +55,19 @@ public class TestOrderService {
 		String orderid = "1496740695230";
 		OrderBean order = service.queryById(orderid);
 		Assert.assertNotNull(order);
+	}
+	
+	/**
+	 * Test the order history function
+	 */
+	@Test
+	public void testOrderHistory(){
+		OrderBean order = new OrderBean();
+		List<OrderBean> list= service.query(order, 104);
+		Assert.assertNotNull(list);
+		for (OrderBean orderBean : list) {
+			System.out.println(orderBean);
+		}
 	}
 
 }

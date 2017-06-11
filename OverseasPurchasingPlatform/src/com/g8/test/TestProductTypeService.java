@@ -43,7 +43,7 @@ public class TestProductTypeService {
 	public void testUpdate(){
 		ProductTypeBean type = new ProductTypeBean();
 		type.setBigtypeid(1);
-		type.setTypeid(17);
+		type.setTypeid(37);
 		type.setTypename("Test1");
 		int a = service.update(type);
 		Assert.assertEquals(1, a);
@@ -57,9 +57,9 @@ public class TestProductTypeService {
 	public void testDelete(){
 		ProductTypeBean type = new ProductTypeBean();
 		type.setBigtypeid(1);
-		type.setTypeid(17);
+		type.setTypeid(37);
 		type.setTypename("Test1");
-		int a = service.update(type);
+		int a = service.delete(37);
 		Assert.assertEquals(1, a);
 	}
 	
@@ -80,8 +80,10 @@ public class TestProductTypeService {
 	public void testQuery(){
 		List<ProductTypeBean> typeList = new ArrayList<>();
 		typeList = service.query();
-		Assert.assertNotNull(typeList);
-		System.out.println(typeList);
+		Assert.assertNotNull(typeList);	
+		for (ProductTypeBean productTypeBean : typeList) {
+			System.out.println(productTypeBean);
+		}
 	}
 	
 	/**

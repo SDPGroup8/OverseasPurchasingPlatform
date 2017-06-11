@@ -44,7 +44,7 @@ public class TestProductService {
 	public void testUpdateProduct() {
 		ProductBean product = new ProductBean();
 		product.setComname("Test");
-		product.setComid(80);
+		product.setComid(81);
 		product.setComdesc("Test1");
 		product.setPrice(0.0);
 		product.setSmalltypeid(5);
@@ -57,7 +57,7 @@ public class TestProductService {
 	 */
 	@Test
 	public void testDeleteProduct() {
-		int a = service.delete(80);
+		int a = service.delete(81);
 		Assert.assertEquals(1, a);
 	}
 	
@@ -86,7 +86,7 @@ public class TestProductService {
 	 */
 	@Test
 	public void testQueryAll() {
-		List list = service.query();
+		List<ProductBean> list = service.query();
 		Assert.assertNotNull(list);
 		System.out.println(list);
 	}
