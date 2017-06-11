@@ -16,7 +16,7 @@ public class OrderDaoImpl extends BaseDao implements IOrderDao {
 	@Override
 	public int add(OrderBean order) {
 		sql="INSERT INTO T_ORDER(ORDERID,USERID,TOTALPRICE,PAYTYPE,RECEIVEDTYPE,USERNAME,ADDRESS,POSTALCODE,PHONENO,EMAIL,CITY,COUNTRY,STATUS,ORDERDATE)values(?,?,?,?,?,?,?,?,?,?,?,?,'Unassigned',sysdate)";
-		int i = super.baseUpdate(sql,order.getOrderid(),order.getUserid(),order.getTotalprice(),order.getPaytype(),order.getReceivedtype(),order.getUsername(),order.getAddress(),order.getPostalcode(),order.getPhoneno(),order.getEmail(),order.getCity(),order.getCountry());
+		int i = super.baseUpdate(sql,order.getOrderid(),order.getUserid(),order.getTotalprice()+3,order.getPaytype(),order.getReceivedtype(),order.getUsername(),order.getAddress(),order.getPostalcode(),order.getPhoneno(),order.getEmail(),order.getCity(),order.getCountry());
 		List<OrderDetailBean> list = order.getList();
 		for (OrderDetailBean detail : list) {
 			detail.setOderid(order.getOrderid());
