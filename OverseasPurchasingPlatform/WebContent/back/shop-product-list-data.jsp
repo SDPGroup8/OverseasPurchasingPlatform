@@ -152,7 +152,7 @@
                 <th>Delete</th>
                 <th>No.</th>
                 <th>Name</th>
-                <th>Category</th>
+                <th>Sub-category</th>
                 <th>Price</th>
                 <th>Amount</th>
                 <th>Image</th>               
@@ -175,7 +175,7 @@
           </div>
           <!-- BEGIN PAGINATOR -->
         <div class="row">
-          <div class="col-md-4 col-sm-4 items-info">Items 1 to 9 of 10 total</div>
+          <div class="col-md-4 col-sm-4 items-info">Page ${page.currentPage } of  ${page.totalPage }</div>
           <div class="col-md-8 col-sm-8">
             <ul class="pagination pull-right">
               <li><a href="javascript:backPage();">&laquo;</a></li>

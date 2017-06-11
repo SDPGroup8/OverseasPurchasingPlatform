@@ -195,7 +195,7 @@
             <div class="row">
               <div class="col-lg-8 col-md-offset-2 padding-left-0 padding-top-20">
                 <button class="btn btn-primary" type="submit">Update</button> 
-                <a href="shop-product-category-data.html">Back to Listing</a>            
+                <a href="ProductTypeServlet">Back to Listing</a>            
               </div>             
             </div>
           </form>

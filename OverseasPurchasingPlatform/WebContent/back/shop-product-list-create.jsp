@@ -256,7 +256,7 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="col-lg-2 control-label" for="sub-category">Sub-category<span
+								<label class="col-lg-2 control-label" for="sub-category">Category<span
 									class="require">*</span></label>
 								<div class="col-lg-8">
 									<select class="form-control" name="bigtypeid" id="bigtypeid"
@@ -269,11 +269,11 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="col-lg-2 control-label" for="category">Category<span
+								<label class="col-lg-2 control-label" for="category">Sub-category<span
 									class="require">*</span></label>
 								<div class="col-lg-8">
 									<select class="form-control" name="smalltypeid" id="smalltypeid">
-										<option value="0">Please Select the Category</option>
+										<option value="0">Please Select the Sub-category</option>
 										<c:forEach var="type" items="${typeList }">
 										<option value="${type.typeid }">${type.typename }</option>
 										</c:forEach>
