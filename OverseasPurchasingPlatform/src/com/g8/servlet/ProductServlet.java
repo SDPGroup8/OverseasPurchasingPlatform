@@ -96,11 +96,15 @@ public class ProductServlet extends HttpServlet {
 				e.printStackTrace();
 			}
 
-		} else if("delete".equals(task)){
+		} 
+		//delete selected product
+		else if("delete".equals(task)){
 			String comid = request.getParameter("comid");
 			service.delete(WebUtils.parseInt(comid));
 			query(request, response);
-		} else if("queryById".equals(task)){
+		} 
+		//query the product according to the product id
+		else if("queryById".equals(task)){
 			String comid = request.getParameter("comid");
 			ProductBean product = service.queryById(WebUtils.parseInt(comid));
 			ProductTypeBean type = service.queryTypeName(product.getSmalltypeid());
@@ -108,7 +112,9 @@ public class ProductServlet extends HttpServlet {
 			request.setAttribute("type", type);
 			request.getRequestDispatcher("shop-product-list-update.jsp?comid="+comid).forward(request, response);
 			
-		} else if("update".equals(task)){
+		} 
+		//modify the product information
+		else if("update".equals(task)){
 			String comid = request.getParameter("comid");
 			// The uploaded file is saved to the server
 			DiskFileItemFactory factory = new DiskFileItemFactory();

@@ -29,27 +29,36 @@ public class ProductTypeServlet extends HttpServlet {
 			throws ServletException, IOException {
 		IProductTypeService service = new ProductTypeServiceImpl();
 		String task = request.getParameter("task");
+		//Query the category
 		if ("queryBigType".equals(task)) {
 			List<ProductTypeBean> list = service.queryBigType();
 			request.setAttribute("bigtypelist", list);
 			request.getRequestDispatcher("shop-product-category-create.jsp").forward(request, response);
-		} else if ("add".equals(task)) {
+		} 
+		//add a new product category
+		else if ("add".equals(task)) {
 			String typename = request.getParameter("categoryname");
 			String bigTypid = request.getParameter("bigtypeid");
 			service.add(new ProductTypeBean(typename, WebUtils.parseInt(bigTypid)));
 			query(request, response, service);
-		} else if ("delete".equals(task)) {
+		} 
+		//delete the selected category
+		else if ("delete".equals(task)) {
 			String typeid = request.getParameter("typeid");
 			service.delete(WebUtils.parseInt(typeid));
 			query(request, response, service);
-		} else if ("queryById".equals(task)) {
+		} 
+		//query the product category according to the type id
+		else if ("queryById".equals(task)) {
 			String typeid = request.getParameter("typeid");
 			ProductTypeBean type = service.queryById(WebUtils.parseInt(typeid));
 			List<ProductTypeBean> list = service.queryBigType();
 			request.setAttribute("type", type);
 			request.setAttribute("bigtypelist", list);
 			request.getRequestDispatcher("shop-product-category-update.jsp").forward(request, response);
-		} else if ("update".equals(task)) {
+		} 
+		//modify the category information
+		else if ("update".equals(task)) {
 			String typeid = request.getParameter("typeid");
 			String typename = request.getParameter("typename");
 			String bigtypeid = request.getParameter("bigtypeid");
@@ -57,13 +66,17 @@ public class ProductTypeServlet extends HttpServlet {
 					WebUtils.parseInt(bigtypeid));
 			service.update(type);
 			query(request, response, service);
-		} else if ("loadBigType".equals(task)) {
+		} 
+		//get the category list
+		else if ("loadBigType".equals(task)) {
 			List<ProductTypeBean> list = service.queryBigType();
 			JSONArray json = new JSONArray(list);
 			out = response.getWriter();
 			out.write(json.toString());
 			out.close();
-		} else if ("loadSmallType".equals(task)) {
+		} 
+		//get the sub-category list according to the category
+		else if ("loadSmallType".equals(task)) {
 			String typeid = request.getParameter("typeid");
 			List<ProductTypeBean> list = service.querySmallType(WebUtils.parseInt(typeid));
 			JSONArray json = new JSONArray(list);
