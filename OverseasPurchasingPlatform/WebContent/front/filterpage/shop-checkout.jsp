@@ -10,10 +10,10 @@ function inFirstName() {
 }
 function outFirstName() {
 	fm = f3.fistname.value;
-	if (fm == "") {
+	if (fm == null || fm== undefined || fm == "") {
+		fcheck = false;
 		first_name_mess.style.visibility = "hidden";
 		f3.first_name.style.border = "";
-		fcheck = false;
 		return;
 	}
 	reg = /^[a-zA-Z\-]+$/;
@@ -38,7 +38,7 @@ function inLastName() {
 }
 function outLastName() {
 	lm = f3.lastname.value;
-	if (lm == "") {
+	if (lm == null || lm== undefined || lm == "") {
 		last_name_mess.style.visibility = "hidden";
 		f3.lastname.style.border = "";
 		lcheck = false;
@@ -66,7 +66,7 @@ function inMail() {
 }
 function outMail() {
 	mm = f3.email.value;
-	if (mm == "") {
+	if (mm == null || mm== undefined || mm == "") {
 		mail_mess.style.visibility = "hidden";
 		f3.email.style.border = "";
 		mcheck = false;
@@ -95,7 +95,7 @@ function inPhone() {
 }
 function outPhone() {
 	pm = f3.telephone.value;
-	if (pm == "") {
+	if (pm == null || pm == undefined || pm == "") {
 		phone_mess.style.visibility = "hidden";
 		f3.telephones.style.border = "";
 		pcheck = false;
@@ -122,7 +122,15 @@ function inAddress() {
 	address_mess.style.visibility = "visible";
 }
 function outAddress(){
+	ad = f3.address.value;
+	if (pm == null || pm == undefined || pm == ""){
+	adcheck = false;
+	return;
+	}else{
 	address_mess.style.visibility = "hidden";
+	adcheck = true;
+	return;
+	}
 }
 function inCity() {
 	city_mess.innerHTML = "Please enter your current city";
@@ -146,7 +154,7 @@ function inPostCode() {
 }
 function outPostCode() {
 	pc = f3.postalcode.value;
-	if (pc == "") {
+	if (pc == null || pc == undefined || pc == "") {
 		postalcode_mess.style.visibility = "hidden";
 		f3.postalcode.style.border = "";
 		pccheck = false;
@@ -168,7 +176,11 @@ function outPostCode() {
 	}
 }
 function validate_info() {
-	if (fcheck && lcheck && pcheck && pacheck && rpcheck && pccheck) {
+	if("${SESSION_SHOPCAR.totalPrice+3.0}"<=3){
+		alert("You should buy something first");
+		return false;
+	}
+	if (fcheck && lcheck && pcheck && pacheck && rpcheck && pccheck && adcheck) {
 		return true;
 	} else {
 		alert("The information has errors, please correct and submit.");
@@ -185,7 +197,7 @@ function validate_info() {
         <li><a href="index.html">Home</a></li>
         <li class="active">Checkout</li>
     </ul>
-  <form id="f3" action = "../OrderServlet?task=add" method = "post" onsubmit="return validate_info();">
+  <form id="f3" role="form" action = "../OrderServlet?task=add" method = "post" onsubmit="return validate_info();">
     <!-- BEGIN SIDEBAR & CONTENT -->
     <div class="row margin-bottom-40">
       <!-- BEGIN CONTENT -->
