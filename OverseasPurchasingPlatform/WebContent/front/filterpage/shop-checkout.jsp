@@ -3,8 +3,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <script type="text/javascript">
+var fcheck = false;
+var lcheck = false;
+var mcheck = false;
+var pcheck = false;
+var adcheck = false;
+var pccheck = false;
 function inFirstName() {
-	var fcheck = false;
 	first_name_mess.innerHTML = "Please input your first name";
 	first_name_mess.style.visibility = "visible";
 }
@@ -34,7 +39,6 @@ function outFirstName() {
 function inLastName() {
 	last_name_mess.innerHTML = "Please input your last name";
 	last_name_mess.style.visibility = "visible";
-	var lcheck = false;
 }
 function outLastName() {
 	lm = f3.lastname.value;
@@ -60,7 +64,6 @@ function outLastName() {
 	}
 }
 function inMail() {
-	var mcheck = false;
 	mail_mess.innerHTML = "Please input your common used e-mail";
 	mail_mess.style.visibility = "visible";
 }
@@ -89,7 +92,6 @@ function outMail() {
 
 }
 function inPhone() {
-	var pcheck = false;
 	phone_mess.innerHTML = "Please input your common used phone number. e.g.(022) 123-4567";
 	phone_mess.style.visibility = "visible";
 }
@@ -148,7 +150,6 @@ function outCountry() {
 	country_mess.style.visibility = "hidden";
 }
 function inPostCode() {
-	var pccheck = false;
 	postalcode_mess.innerHTML = "Please enter the zip code for your region";
 	postalcode_mess.style.visibility = "visible";
 }
