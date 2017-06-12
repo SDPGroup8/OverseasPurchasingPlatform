@@ -54,6 +54,7 @@ public class HomeServlet extends HttpServlet {
 			request.setAttribute("page", page);
 			request.setAttribute("totalPage", page.getTotalPage());
 			request.setAttribute("comname", comname);
+			request.setAttribute("smalltypeid", smalltypeid);
 			request.getRequestDispatcher("shop-product-list.jsp").forward(request, response);
 		}   
 		//return to the home page of the website
