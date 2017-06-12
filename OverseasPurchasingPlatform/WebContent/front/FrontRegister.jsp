@@ -6,14 +6,19 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 <script type="text/javascript">
+	var fcheck = false;
+	var lcheck = false;
+	var mcheck = false;
+	var pcheck = false;
+	var pcheck = false;
+	var rpcheck = false;
 	function inFirstName() {
-		var fcheck = false;
 		first_name_mess.innerHTML = "Please input your first name";
 		first_name_mess.style.visibility = "visible";
 	}
 	function outFirstName() {
 		fm = f1.first_name.value;
-		if (fm == "") {
+		if (fm == null || fm== undefined || fm == "") {
 			first_name_mess.style.visibility = "hidden";
 			f1.first_name.style.border = "";
 			fcheck = false;
@@ -37,11 +42,10 @@
 	function inLastName() {
 		last_name_mess.innerHTML = "Please input your last name";
 		last_name_mess.style.visibility = "visible";
-		var lcheck = false;
 	}
 	function outLastName() {
 		lm = f1.last_name.value;
-		if (lm == "") {
+		if (lm == null || lm== undefined || lm == "") {
 			last_name_mess.style.visibility = "hidden";
 			f1.last_name.style.border = "";
 			lcheck = false;
@@ -63,13 +67,12 @@
 		}
 	}
 	function inMail() {
-		var mcheck = false;
 		mail_mess.innerHTML = "Please input your common used e-mail";
 		mail_mess.style.visibility = "visible";
 	}
 	function outMail() {
 		mm = f1.mail.value;
-		if (mm == "") {
+		if (mm == null || mm== undefined || mm == "") {
 			mail_mess.style.visibility = "hidden";
 			f1.mail.style.border = "";
 			mcheck = false;
@@ -92,13 +95,12 @@
 
 	}
 	function inPhone() {
-		var pcheck = false;
 		phone_mess.innerHTML = "Please input your common used phone number. e.g.(022) 123-4567";
 		phone_mess.style.visibility = "visible";
 	}
 	function outPhone() {
 		pm = f1.phone.value;
-		if (pm == "") {
+		if (pm == null || pm== undefined || pm == "") {
 			phone_mess.style.visibility = "hidden";
 			f1.phone.style.border = "";
 			pcheck = false;
@@ -121,13 +123,12 @@
 
 	}
 	function inPass() {
-		var pacheck = false;
 		pass_mess.innerHTML = "Please input the password. The password should between 6 to 18 characters.";
 		pass_mess.style.visibility = "visible";
 	}
 	function outPass() {
 		p = f1.password_login.value;
-		if (p == "") {
+		if (p == null || p== undefined || p == "") {
 			pass_mess.style.visibility = "hidden";
 			f1.password_login.style.border = "";
 			pacheck = false;
@@ -149,14 +150,13 @@
 		}
 	}
 	function inRPass() {
-		var rpcheck = false;
 		rpass_mess.innerHTML = "Please confirm the password";
 		rpass_mess.style.visibility = "visible";
 
 	}
 	function outRPass() {
 		rp = f1.password_comfirm.value;
-		if (rp == "") {
+		if (rp == null || rp== undefined || rp == "") {
 			rpass_mess.style.visibility = "hidden";
 			f1.password_confirm.style.border = "";
 			rpcheck = false;
