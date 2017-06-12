@@ -163,6 +163,7 @@
                    <input type="hidden" name="currentPage" id="currentPage" value="${page.currentPage }">
 			       <input type="hidden" name="pageSize" id="pageSize" value="${page.pageSize }">
                     <input type="text" placeholder="Search" value="${comname }" name="comname" class="form-control">
+                    <input type="hidden" name="smalltypeid" id="smalltypeid" value="${smalltypeid }">
                     <span class="input-group-btn">
                       <button class="btn btn-primary" type="submit">Search</button>
                     </span>

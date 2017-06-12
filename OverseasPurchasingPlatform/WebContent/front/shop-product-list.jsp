@@ -101,10 +101,6 @@
           </div>
             </c:forEach>
           <!-- PRODUCT ITEM END -->
-          <form action="HomeServlet?task=productlist" method="post" id="myForm">
-						<input type="hidden" name="currentPage" id="currentPage" value="${page.currentPage }">
-						<input type="hidden" name="pageSize" id="pageSize" value="${page.pageSize }">
-						</form>
         </div>
         
         <!-- END PRODUCT LIST -->
